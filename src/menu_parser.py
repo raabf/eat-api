@@ -4,9 +4,10 @@ import re
 import sys
 import tempfile
 import unicodedata
-from datetime import datetime
+from datetime import datetime, date
 from subprocess import call
 from warnings import warn
+from enum import IntEnum, unique
 
 import requests
 from lxml import html
@@ -14,15 +15,27 @@ from lxml import html
 import util
 from entities import Dish, Menu
 
+@unique
+class Weekday(IntEnum):
+    mon = 1
+    tue = 2
+    wed = 3
+    thu = 4
+    fri = 5
+    sat = 6
+    sun = 7
 
 class MenuParser:
-    weekday_positions = {"mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6, "sun": 0}
 
-    def get_date(self, year, week_number, day):
+    @staticmethod
+    def weeknumber_to_date_iso_8601(year: int, week_number: int, weekday: Weekday) -> date:
+        """
+        Returns the date from the year, week number, and weekday in ISO8601 format.
+        """
         # get date from year, week number and current weekday
         # https://stackoverflow.com/questions/17087314/get-date-from-week-number
-        date_str = "%d-W%d-%d" % (year, week_number, day)
-        date = datetime.strptime(date_str, "%Y-W%W-%w").date()
+        date_str = "{}-W{}-{}".format(year, week_number, int(weekday))
+        date = datetime.strptime(date_str, "%G-W%V-%u").date()
         return date
 
     def parse(self, location):
@@ -226,13 +239,13 @@ class FMIBistroMenuParser(MenuParser):
 
         # The text is formatted as table using whitespaces. Hence, we need to get those parts of each line that refer
         #  to the respective week day
-        lines_weekdays = {"mon": "", "tue": "", "wed": "", "thu": "", "fri": ""}
+        lines_weekdays = {Weekday.mon: "", Weekday.tue: "", Weekday.wed: "", Weekday.thu: "", Weekday.fri: ""}
         for line in lines:
-            lines_weekdays["mon"] += " " + line[pos_mon:pos_tue].replace("\n", " ").replace("Montag", "")
-            lines_weekdays["tue"] += " " + line[pos_tue:pos_wed].replace("\n", " ").replace("Dienstag", "")
-            lines_weekdays["wed"] += " " + line[pos_wed:pos_thu].replace("\n", " ").replace("Mittwoch", "")
-            lines_weekdays["thu"] += " " + line[pos_thu:pos_fri].replace("\n", " ").replace("Donnerstag", "")
-            lines_weekdays["fri"] += " " + line[pos_fri:].replace("\n", " ").replace("Freitag", "")
+            lines_weekdays[Weekday.mon] += " " + line[pos_mon:pos_tue].replace("\n", " ").replace("Montag", "")
+            lines_weekdays[Weekday.tue] += " " + line[pos_tue:pos_wed].replace("\n", " ").replace("Dienstag", "")
+            lines_weekdays[Weekday.wed] += " " + line[pos_wed:pos_thu].replace("\n", " ").replace("Mittwoch", "")
+            lines_weekdays[Weekday.thu] += " " + line[pos_thu:pos_fri].replace("\n", " ").replace("Donnerstag", "")
+            lines_weekdays[Weekday.fri] += " " + line[pos_fri:].replace("\n", " ").replace("Freitag", "")
 
         # currently, up to 5 dishes are on the menu
         num_dishes = 5
@@ -282,7 +295,7 @@ class FMIBistroMenuParser(MenuParser):
             dishes = [Dish(dish_name, price) for (dish_name, price) in list(zip(dish_names, prices))][:num_dishes]
             # filter empty dishes
             dishes = list(filter(lambda x: x.name != "", dishes))
-            date = self.get_date(year, week_number, self.weekday_positions[key])
+            date = self.weeknumber_to_date_iso_8601(year, week_number, key)
             # create new Menu object and add it to dict
             menu = Menu(date, dishes)
             # remove duplicates
@@ -394,15 +407,15 @@ class IPPBistroMenuParser(MenuParser):
         pos_thu = positions[3][0]
         pos_fri = positions[4][0]
 
-        lines_weekdays = {"mon": "", "tue": "", "wed": "", "thu": "", "fri": ""}
+        lines_weekdays = {Weekday.mon: "", Weekday.tue: "", Weekday.wed: "", Weekday.thu: "", Weekday.fri: ""}
         # it must be lines[3:] instead of lines[2:] or else the menus would start with "Preis ab 0,90€" (from the
         # soups) instead of the first menu, if there is a day where the bistro is closed.
         for line in lines[soup_line_index + 3:]:
-            lines_weekdays["mon"] += " " + line[pos_mon:pos_tue].replace("\n", " ")
-            lines_weekdays["tue"] += " " + line[pos_tue:pos_wed].replace("\n", " ")
-            lines_weekdays["wed"] += " " + line[pos_wed:pos_thu].replace("\n", " ")
-            lines_weekdays["thu"] += " " + line[pos_thu:pos_fri].replace("\n", " ")
-            lines_weekdays["fri"] += " " + line[pos_fri:].replace("\n", " ")
+            lines_weekdays[Weekday.mon] += " " + line[pos_mon:pos_tue].replace("\n", " ")
+            lines_weekdays[Weekday.tue] += " " + line[pos_tue:pos_wed].replace("\n", " ")
+            lines_weekdays[Weekday.wed] += " " + line[pos_wed:pos_thu].replace("\n", " ")
+            lines_weekdays[Weekday.thu] += " " + line[pos_thu:pos_fri].replace("\n", " ")
+            lines_weekdays[Weekday.fri] += " " + line[pos_fri:].replace("\n", " ")
 
         for key in lines_weekdays:
             # get rid of two-character umlauts (e.g. SMALL_LETTER_A+COMBINING_DIACRITICAL_MARK_UMLAUT)
@@ -419,7 +432,7 @@ class IPPBistroMenuParser(MenuParser):
             dish_names = [re.sub(self.price_regex, "", dish).strip() for dish in dish_names]
             # create list of Dish objects
             dishes = [Dish(dish_name, price) for (dish_name, price) in list(zip(dish_names, prices))]
-            date = self.get_date(year, week_number, self.weekday_positions[key])
+            date = self.weeknumber_to_date_iso_8601(year, week_number, key)
             # create new Menu object and add it to dict
             menu = Menu(date, dishes)
             # remove duplicates
@@ -490,7 +503,7 @@ class MedizinerMensaMenuParser(MenuParser):
         if len(days_list) != 7:
             # as the Mediziner Mensa is part of hospital, it should serve food on each day
             return None
-        days = {"mon": days_list[0], "tue": days_list[1], "wed": days_list[2], "thu": days_list[3], "fri": days_list[4],
+        days = {Weekday.mon: days_list[0], Weekday.tue: days_list[1], Weekday.wed: days_list[2], Weekday.thu: days_list[3], Weekday.fri: days_list[4],
                 "sat": days_list[5], "sun": days_list[6]}
 
 
@@ -510,7 +523,7 @@ class MedizinerMensaMenuParser(MenuParser):
                      for m in mains if m not in ["", "Feiertag"]]
             # TODO prices
             dishes = [Dish(dish_name, "N/A") for dish_name in mains]
-            date = self.get_date(year, week_number, self.weekday_positions[key])
+            date = self.weeknumber_to_date_iso_8601(year, week_number, key)
             menu = Menu(date, dishes)
             # remove duplicates
             menu.remove_duplicates()
