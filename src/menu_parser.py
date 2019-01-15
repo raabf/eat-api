@@ -15,6 +15,7 @@ from lxml import html
 import util
 from entities import Dish, Menu
 
+
 @unique
 class Weekday(IntEnum):
     mon = 1
@@ -24,6 +25,7 @@ class Weekday(IntEnum):
     fri = 5
     sat = 6
     sun = 7
+
 
 class MenuParser:
 
@@ -389,7 +391,7 @@ class IPPBistroMenuParser(MenuParser):
         positions3 = [(max(a.start() - 3, 0), a.end()) for a in list(
             re.finditer(self.split_days_regex_closed, soup_line2))]
 
-        if positions2: # Two lines "Tagessuppe siehe Aushang"
+        if positions2:  # Two lines "Tagessuppe siehe Aushang"
             soup_line_index = lines.index(soup_line2)
         else:
             soup_line_index = lines.index(soup_line1)
@@ -497,15 +499,15 @@ class MedizinerMensaMenuParser(MenuParser):
         lines = lines[:last_relevant_line]
 
         days_list = [d for d in
-                re.split(r"(Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag),\s\d{1,2}.\d{1,2}.\d{4}",
-                         "\n".join(lines).replace("*", "").strip())
-                if d not in ["", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]]
+                     re.split(r"(Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag),\s\d{1,2}.\d{1,2}.\d{4}",
+                              "\n".join(lines).replace("*", "").strip())
+                     if d not in ["", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]]
         if len(days_list) != 7:
             # as the Mediziner Mensa is part of hospital, it should serve food on each day
             return None
-        days = {Weekday.mon: days_list[0], Weekday.tue: days_list[1], Weekday.wed: days_list[2], Weekday.thu: days_list[3], Weekday.fri: days_list[4],
-                "sat": days_list[5], "sun": days_list[6]}
-
+        days = {Weekday.mon: days_list[0], Weekday.tue: days_list[1], Weekday.wed: days_list[2],
+                Weekday.thu: days_list[3], Weekday.fri: days_list[4],
+                Weekday.sat: days_list[5], Weekday.sun: days_list[6]}
 
         for key in days:
             day_lines = unicodedata.normalize("NFKC", days[key]).splitlines(True)
