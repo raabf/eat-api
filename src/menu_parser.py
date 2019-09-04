@@ -552,13 +552,27 @@ class MedizinerMensaMenuParser(MenuParser):
     def get_menus(self, text, year, week_number):
         menus = {}
         count = 0
-        lines = text.replace("Extraessen", "").splitlines()
+        lines = text.splitlines()
+
+        # get dish types
+        # its the line before the first "***..." line
+        dish_types_line = ""
+        last_non_empty_line = -1
+        for i in range(0, len(lines)):
+            if "***" in lines[i]:
+                if last_non_empty_line >= 0:
+                    dish_types_line = lines[last_non_empty_line]
+                break
+            elif lines[i]:
+                last_non_empty_line = i
+        dish_types = re.split(r"\s{2,}", dish_types_line)
+        dish_types = [dt for dt in dish_types if dt]
+
+        # get all dish lines
         for line in lines:
             if "Montag" in line:
                 break
-
             count += 1
-
         lines = lines[count:]
 
         # get rid of Zusatzstoffe and Allergene: everything below the last ***-delimiter is irrelevant
@@ -588,16 +602,31 @@ class MedizinerMensaMenuParser(MenuParser):
 
             soup_str = soup_str.replace("-\n", "").strip().replace("\n", " ")
             soup = self.parse_dish(soup_str)
-            soup.dish_type = "Suppe"
+            if len(dish_types) > 0:
+                soup.dish_type = dish_types[0]
+            else:
+                soup.dish_type = "Suppe"
             dishes = []
             if (soup.name not in ["", "Feiertag"]):
                 dishes.append(soup)
             # https://regex101.com/r/MDFu1Z/1
+
+            # prepare dish type
+            dish_type = ""
+            if len(dish_types) > 1:
+                dish_type = dish_types[1]
+                
             for dish_str in re.split(r"(\n{2,}|(?<!mit)\n(?=[A-Z]))", mains_str):
+                if "Extraessen" in dish_str:
+                    # now only "Extraessen" will follow
+                    dish_type = "Extraessen"
+                    continue
                 dish_str = dish_str.strip().replace("\n", " ")
                 dish = self.parse_dish(dish_str)
                 dish.name = dish.name.strip()
                 if dish.name not in ["", "Feiertag"]:
+                    if dish_type:
+                        dish.dish_type = dish_type
                     dishes.append(dish)
 
             date = self.get_date(year, week_number, self.weekday_positions[key])
