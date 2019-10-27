@@ -14,7 +14,8 @@
                             "ingredients": [
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Gekochtes Ochsenfleisch mit Meerrettich",
@@ -25,7 +26,8 @@
                                 "Mi",
                                 "R",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Kürbisauflauf",
@@ -36,7 +38,8 @@
                                 "Ei",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Asiatische Gemüse-Puten-Pfanne mit Reisnudeln",
@@ -47,7 +50,8 @@
                                 "Gl",
                                 "Se",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Extraessen"
                         }
                     ]
                 },
@@ -60,7 +64,8 @@
                             "ingredients": [
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Oldenburger Grünkohl mit Mettenden",
@@ -74,14 +79,16 @@
                                 "Mi",
                                 "S",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Kaschmir Kohlrabi und Brokkoli",
                             "price": "N/A",
                             "ingredients": [
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Conchiglioni Nudeln mit mit mediterranem Gemüse",
@@ -92,7 +99,8 @@
                                 "Ei",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Extraessen"
                         }
                     ]
                 },
@@ -102,7 +110,8 @@
                         {
                             "name": "Französische Zwiebelsuppe",
                             "price": "N/A",
-                            "ingredients": []
+                            "ingredients": [],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Germknödel mit Vanillesoße",
@@ -113,7 +122,8 @@
                                 "Ei",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Herzhaftes Kartoffelgratin",
@@ -125,7 +135,8 @@
                                 "Gl",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Holzfällersteak mit Bratkartoffeln und Weißkrautsalat",
@@ -134,7 +145,8 @@
                                 "Gl",
                                 "S",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Extraessen"
                         }
                     ]
                 },
@@ -147,14 +159,16 @@
                             "ingredients": [
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Hähnchenbrust gegrillt",
                             "price": "N/A",
                             "ingredients": [
                                 "G"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "In Sesamöl gebratenes Wokgemüse",
@@ -164,7 +178,8 @@
                                 "Gl",
                                 "Se",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         }
                     ]
                 },
@@ -177,7 +192,8 @@
                             "ingredients": [
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Forelle \"Müllerin Art \"",
@@ -185,7 +201,8 @@
                             "ingredients": [
                                 "Fi",
                                 "Gl"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Quarkklößchen",
@@ -198,7 +215,8 @@
                                 "Gl",
                                 "Mi",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Chili con Cous Cous mit Kürbis-Apfel-Salat",
@@ -208,7 +226,8 @@
                                 "9",
                                 "Gl",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Extraessen"
                         }
                     ]
                 },
@@ -224,7 +243,8 @@
                                 "R",
                                 "S",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Geflügelpflanzerl",
@@ -235,14 +255,16 @@
                                 "Gl",
                                 "Mi",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Krauttopf mit einer Vollkornsemmel",
                             "price": "N/A",
                             "ingredients": [
                                 "Gl"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         }
                     ]
                 },
@@ -257,14 +279,16 @@
                                 "2",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Geschmortes Kalbfleisch",
                             "price": "N/A",
                             "ingredients": [
                                 "K"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Vegetarische Moussaka",
@@ -274,7 +298,8 @@
                                 "2",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         }
                     ]
                 }

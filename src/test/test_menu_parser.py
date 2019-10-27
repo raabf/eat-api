@@ -144,14 +144,17 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         week_2017_16_actual = json.loads(weeks[16].to_json())
         week_2017_17_actual = json.loads(weeks[17].to_json())
 
-        a = self.order_json_objects(week_2017_13_actual)
-        b = self.order_json_objects(week_2017_13)
-
         self.assertEqual(self.order_json_objects(week_2017_13_actual), self.order_json_objects(week_2017_13))
         self.assertEqual(self.order_json_objects(week_2017_14_actual), self.order_json_objects(week_2017_14))
         self.assertEqual(self.order_json_objects(week_2017_15_actual), self.order_json_objects(week_2017_15))
         self.assertEqual(self.order_json_objects(week_2017_16_actual), self.order_json_objects(week_2017_16))
         self.assertEqual(self.order_json_objects(week_2017_17_actual), self.order_json_objects(week_2017_17))
+
+    def test_genFile(self):
+        # parse the menu
+        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
+        weeks = Week.to_weeks(menus)
+        main.jsonify(weeks, "mensa-garching.json", "mensa-garching", True)
 
 
 class FMIBistroParserTest(unittest.TestCase):
@@ -264,9 +267,9 @@ class IPPBistroParserTest(unittest.TestCase):
 
     menu_kw_19_2018_txt = open('src/test/assets/ipp/in/menu_kw_19_2018.txt', 'r').read()
     menu_kw_19_2018_year = 2018
-    menu_kw_19_2018_week_number = 18
+    menu_kw_19_2018_week_number = 19
 
-    def test_Ipp_Bistro_Kw_18_2018_closed_thursday(self):
+    def test_Ipp_Bistro_Kw_19_2018_closed_thursday(self):
         # parse the menu
         menus = self.ipp_parser.get_menus(self.menu_kw_19_2018_txt, self.menu_kw_19_2018_year, self.menu_kw_19_2018_week_number)
         weeks = Week.to_weeks(menus)
@@ -287,7 +290,7 @@ class IPPBistroParserTest(unittest.TestCase):
     menu_kw_22_2019_year = 2019
     menu_kw_22_2019_week_number = 22
 
-    def test_Ipp_Bistro_Kw_18_2018_closed_thursday(self):
+    def test_Ipp_Bistro_Kw_22_2019_closed_thursday(self):
         # parse the menu
         menus = self.ipp_parser.get_menus(self.menu_kw_22_2019_txt, self.menu_kw_22_2019_year, self.menu_kw_22_2019_week_number)
         weeks = Week.to_weeks(menus)
@@ -348,7 +351,7 @@ class MedizinerMensaParserTest(unittest.TestCase):
     # just for generating reference json files
     def test_genFile(self):
         # parse the menu
-        menus = self.mediziner_mensa_parser.get_menus(self.menu_kw_47_2018_txt, self.menu_kw_47_2018_year, self.menu_kw_47_2018_week_number)
+        menus = self.bistro_parser.get_menus(self.menu_kw_44_2017_txt, self.menu_kw_44_2017_year, self.menu_kw_44_2017_week_number)
         weeks = Week.to_weeks(menus)
-        main.jsonify(weeks, "mensa-garching.json", "mediziner-mensa", True)
+        main.jsonify(weeks, "mensa-garching.json", "fmi-bistro", True)
     """

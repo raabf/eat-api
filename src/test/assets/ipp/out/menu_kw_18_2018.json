@@ -27,7 +27,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Fitnessteak vom Grill, dazu Zitrone oder Kräuterbutter, Grilltomate und Ofenkartoffel mit Sauerrahmdip oder bunter Salatauswahl",
@@ -40,7 +41,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "\"Chana Dal\" Kichererbsen, Kartoffeln, Kokosmilch, Curryblätter und Reis",
@@ -53,7 +55,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "Calamari alla Romana, gebackene Tintenfischringe mit Knoblauchmayonnaise und gemischtem Blattsalat mit Tomate und Gurke",
@@ -66,7 +69,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 },
@@ -84,7 +88,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Böfflamott, gebeizter Rinderschmorbraten mit Rotwein, dazu Frühlingsgemüse und Semmelknödel",
@@ -97,7 +102,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "Fussili mit Lauch, Ricotta, Meerrettich und frischem Basilikum",
@@ -110,7 +116,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "Aus dem Wok Putengeschnetzeltes mit Mangold, Möhren, Frühlings- zwiebeln und Basmatireis",
@@ -123,7 +130,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 },
@@ -141,7 +149,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Zitronen Seelachs auf Paprika-Champignon Gemüse, Petersilien- Kartoffeln und leichter Buttersauce",
@@ -154,7 +163,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "Paprikarahmgeschnetzeltes mit Hörnchennudeln",
@@ -167,7 +177,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "\"Pasta Arora\" italienische Nudeln mit Tomatensahne, Mozzarella und Basilikum",
@@ -180,7 +191,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 }
