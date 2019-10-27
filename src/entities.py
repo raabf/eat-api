@@ -6,30 +6,34 @@ from typing import Dict, Optional, Sequence
 
 
 class Dish:
-    def __init__(self, name, price, ingredients):
+    def __init__(self, name, price, ingredients, dish_type):
         self.name = name
         try:
             self.price = float(price)
         except ValueError:
             self.price = price
         self.ingredients = ingredients
+        self.dish_type = dish_type
 
     def __repr__(self):
         if type(self.price) is not str:
-            return "%s %s: %.2f€" % (self.name, str(sorted(self.ingredients)), self.price)
+            return "%s %s %s: %.2f€" % (self.dish_type, self.name, str(sorted(self.ingredients)), self.price)
         else:
-            return "%s %s: %s" % (self.name, str(sorted(self.ingredients)), self.price)
+            return "%s %s %s: %s" % (self.dish_type, self.name, str(sorted(self.ingredients)), self.price)
 
     def __eq__(self, other):
         if isinstance(other, self.__class__):
             return (self.name == other.name
                     and self.price == other.price
-                    and self.ingredients == other.ingredients)
+                    and self.ingredients == other.ingredients
+                    and self.dish_type == other.dish_type)
         return False
 
     def to_json_obj(self):
-        return {"name": self.name, "price": self.price,
-             "ingredients": sorted(self.ingredients)}
+        return {"name": self.name,
+                "price": self.price,
+                "ingredients": sorted(self.ingredients),
+                "dish_type": self.dish_type}
 
     def __hash__(self):
         # http://stackoverflow.com/questions/4005318/how-to-implement-a-good-hash-function-in-python

@@ -3,38 +3,42 @@
     "year": 2017,
     "days": [
         {
-            "date": "2017-04-20",
+            "date": "2017-04-18",
             "dishes": [
                 {
+                    "name": "Indisches Linsencurry",
+                    "price": 1.0,
                     "ingredients": [
-                        "Mi",
                         "Kn",
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 1"
+                },
+                {
+                    "name": "Blätterteigtasche gefüllt mit Spinat und Hirtenkäse",
+                    "price": 2.4,
+                    "ingredients": [
+                        "Ei",
                         "Gl",
                         "GlW",
-                        "So"
-                    ],
-                    "name": "Bio-Penne mit Bio-Soja-Bolognese-Sauce",
-                    "price": 1.9
-                },
-                {
-                    "ingredients": [
-                        "Sl",
                         "Kn",
-                        "Gl",
-                        "GlW"
+                        "Mi",
+                        "Sl"
                     ],
-                    "name": "Putengulasch",
-                    "price": 2.4
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
+                    "name": "Pikante Chickenwings mit Barbecuesauce",
+                    "price": 2.4,
                     "ingredients": [
+                        "10",
+                        "11",
+                        "Kn",
                         "Sf",
-                        "Kn",
-                        "2",
-                        "So"
+                        "Sl"
                     ],
-                    "name": "Reis mit asiatischem Gemüse und Koriander",
-                    "price": 1
+                    "dish_type": "Aktionsessen 3"
                 }
             ]
         },
@@ -42,71 +46,76 @@
             "date": "2017-04-19",
             "dishes": [
                 {
-                    "ingredients": [
-                        "Kn",
-                        "Gl",
-                        "GlW"
-                    ],
                     "name": "Orientalischer Bulgur mit Kichererbsen und Spinat",
-                    "price": 1
-                },
-                {
-                    "ingredients": [
-                        "R",
-                        "S",
-                        "8"
-                    ],
-                    "name": "Fränkische Bratwurst mit Sauerkraut",
-                    "price": 1.55
-                },
-                {
+                    "price": 1.0,
                     "ingredients": [
                         "Gl",
-                        "Sw",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Tagesgericht 1"
+                },
+                {
+                    "name": "Fränkische Bratwurst mit Sauerkraut",
+                    "price": 1.55,
+                    "ingredients": [
+                        "8",
+                        "R",
+                        "S"
+                    ],
+                    "dish_type": "Tagesgericht 2"
+                },
+                {
+                    "name": "Gekochte Rinderbrust (GQB) mit Meerrettichsauce",
+                    "price": 3.0,
+                    "ingredients": [
                         "3",
+                        "Gl",
                         "GlW",
                         "Mi",
-                        "Sl"
+                        "Sl",
+                        "Sw"
                     ],
-                    "name": "Gekochte Rinderbrust (GQB) mit Meerrettichsauce",
-                    "price": 3.0
+                    "dish_type": "Aktionsessen 6"
                 }
             ]
         },
         {
-            "date": "2017-04-18",
+            "date": "2017-04-20",
             "dishes": [
                 {
+                    "name": "Reis mit asiatischem Gemüse und Koriander",
+                    "price": 1.0,
+                    "ingredients": [
+                        "2",
+                        "Kn",
+                        "Sf",
+                        "So"
+                    ],
+                    "dish_type": "Tagesgericht 1"
+                },
+                {
+                    "name": "Putengulasch",
+                    "price": 2.4,
                     "ingredients": [
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "Kn",
-                        "Sl",
-                        "Ei"
-                    ],
-                    "name": "Blätterteigtasche gefüllt mit Spinat und Hirtenkäse",
-                    "price": 2.4
-                },
-                {
-                    "ingredients": [
-                        "Sf",
                         "Kn",
                         "Sl"
                     ],
-                    "name": "Indisches Linsencurry",
-                    "price": 1
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
+                    "name": "Bio-Penne mit Bio-Soja-Bolognese-Sauce",
+                    "price": 1.9,
                     "ingredients": [
-                        "11",
+                        "Gl",
+                        "GlW",
                         "Kn",
-                        "Sf",
-                        "Sl",
-                        "10"
+                        "Mi",
+                        "So"
                     ],
-                    "name": "Pikante Chickenwings mit Barbecuesauce",
-                    "price": 2.4
+                    "dish_type": "Biogericht 2"
                 }
             ]
         },
@@ -114,32 +123,35 @@
             "date": "2017-04-21",
             "dishes": [
                 {
-                    "ingredients": [
-                        "Mi",
-                        "Gl",
-                        "Kn",
-                        "Fi",
-                        "GlW"
-                    ],
-                    "name": "Seelachsfilet (MSC) auf Blattspinat, Blattspinat",
-                    "price": 2.4
-                },
-                {
+                    "name": "Grüner Erbseneintopf",
+                    "price": 1.0,
                     "ingredients": [
                         "Sl"
                     ],
-                    "name": "Grüner Erbseneintopf",
-                    "price": 1
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
+                    "name": "Dampfnudel mit Vanillesauce",
+                    "price": 2.4,
                     "ingredients": [
-                        "Mi",
+                        "Ei",
                         "Gl",
                         "GlW",
-                        "Ei"
+                        "Mi"
                     ],
-                    "name": "Dampfnudel mit Vanillesauce",
-                    "price": 2.4
+                    "dish_type": "Tagesgericht 4"
+                },
+                {
+                    "name": "Seelachsfilet (MSC) auf Blattspinat, Blattspinat",
+                    "price": 2.4,
+                    "ingredients": [
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 }
             ]
         }

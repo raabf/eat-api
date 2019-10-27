@@ -12,7 +12,8 @@
                         "Kn",
                         "Sf",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Blätterteigtasche gefüllt mit Spinat und Hirtenkäse",
@@ -24,7 +25,8 @@
                         "Kn",
                         "Mi",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Pikante Chickenwings mit Barbecuesauce",
@@ -35,42 +37,8 @@
                         "Kn",
                         "Sf",
                         "Sl"
-                    ]
-                },
-                {
-                    "name": "Rigatoni mit Pesto rosso (scharf)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "2",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Mi",
-                        "Sc",
-                        "ScM"
-                    ]
-                },
-                {
-                    "name": "Fleckerl mit Schinken und Erbsen",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "2",
-                        "3",
-                        "8",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "S"
-                    ]
-                },
-                {
-                    "name": "Indisches Linsencurry (2)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Kn",
-                        "Sf",
-                        "Sl"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 }
             ]
         },
@@ -84,7 +52,8 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Fränkische Bratwurst mit Sauerkraut",
@@ -93,7 +62,8 @@
                         "8",
                         "R",
                         "S"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 2"
                 },
                 {
                     "name": "Gekochte Rinderbrust (GQB) mit Meerrettichsauce",
@@ -105,37 +75,8 @@
                         "Mi",
                         "Sl",
                         "Sw"
-                    ]
-                },
-                {
-                    "name": "Pasta mit Gorgonzolasauce",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ]
-                },
-                {
-                    "name": "Pasta mit Räucherlachs und frischem Dill in Zitronensauce",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Fi",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ]
-                },
-                {
-                    "name": "Orientalischer Bulgur mit Kichererbsen und Spinat (2)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 }
             ]
         },
@@ -150,7 +91,8 @@
                         "Kn",
                         "Sf",
                         "So"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Putengulasch",
@@ -160,49 +102,20 @@
                         "GlW",
                         "Kn",
                         "Sl"
-                    ]
-                },
-                {
-                    "name": "Kaiserschmarrn mit Apfelmus",
-                    "price": 2.4,
-                    "ingredients": [
-                        "3",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Mi"
-                    ]
-                },
-                {
-                    "name": "Reis mit asiatischem Gemüse und Koriander (2)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "2",
-                        "Kn",
-                        "Sf",
-                        "So"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Bio-Penne mit Bio-Soja-Bolognese-Sauce",
-                    "price": "0.68€ / 100g",
+                    "price": 1.9,
                     "ingredients": [
                         "Gl",
                         "GlW",
                         "Kn",
                         "Mi",
                         "So"
-                    ]
-                },
-                {
-                    "name": "Penne mit Zucchini und Hackfleisch",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "R"
-                    ]
+                    ],
+                    "dish_type": "Biogericht 2"
                 }
             ]
         },
@@ -214,7 +127,8 @@
                     "price": 1.0,
                     "ingredients": [
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Dampfnudel mit Vanillesauce",
@@ -224,7 +138,8 @@
                         "Gl",
                         "GlW",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Seelachsfilet (MSC) auf Blattspinat, Blattspinat",
@@ -235,33 +150,8 @@
                         "GlW",
                         "Kn",
                         "Mi"
-                    ]
-                },
-                {
-                    "name": "Grüner Erbseneintopf (2)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Sl"
-                    ]
-                },
-                {
-                    "name": "Pasta mit frischem Basilikum und Tomaten",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ]
-                },
-                {
-                    "name": "Budapester Nudelgericht (Pute)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 }
             ]
         }

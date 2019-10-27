@@ -19,7 +19,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Pfefferrahmgeschnetzeltes von der Pute mit Reis",
@@ -32,7 +33,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "Überraschungsmenü",
@@ -45,7 +47,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "Luganer Schweinesteak mit Senf, Schinken, Käse und Tomatenragout gratiniert, dazu Pommes frites",
@@ -58,7 +61,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 },
@@ -76,7 +80,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Gnocchi Aurora, dazu Pesto und Grana",
@@ -89,7 +94,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "Wokgericht Gemüse-Couscous mit mariniertem Harissa-Honig- Hühnchen (leicht scharf)",
@@ -102,7 +108,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "\"Kentucky-fried-Schnitzel\", Schweineschnitzel in Paprika- Oregano-Panade, dazu Pommes frites",
@@ -115,7 +122,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 },
@@ -133,7 +141,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Putenschnitzel in Zitronen- Kapernsauce mit Petersilienkartoffeln",
@@ -146,7 +155,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "Penne \"Diabolo\" mit Cabanossi, Peperoni,Paprika, Zucchini, Chilipulver und Mais, dazu Grana",
@@ -159,7 +169,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "\"Battala Curry\", süße Kartoffeln, Erbsen, Kokosmilch, Senfkörner und Reis",
@@ -172,7 +183,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 },

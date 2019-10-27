@@ -164,14 +164,14 @@ class StudentenwerkMenuParser(MenuParser):
                 # some dishes are multi-row. That means that for the same type the dish is written in multiple rows.
                 # From the second row on the type is then just empty. In that case, we just use the price and
                 # ingredients of the previous dish.
-                dishes.append(Dish(name, dishes[-1].price, dishes[-1].ingredients))
+                dishes.append(Dish(name, dishes[-1].price, dishes[-1].ingredients, dishes[-1].dish_type))
             else:
                 dish_ingredients = Ingredients(location)
                 dish_ingredients.parse_ingredients(dishes_dict[name][1])
                 dish_ingredients.parse_ingredients(dishes_dict[name][2])
                 dish_ingredients.parse_ingredients(dishes_dict[name][3])
                 dishes.append(Dish(name, StudentenwerkMenuParser.prices.get(dishes_dict[name][0], "N/A"),
-                                   dish_ingredients.ingredient_set))
+                                   dish_ingredients.ingredient_set, dishes_dict[name][0]))
 
         return dishes
 
@@ -310,7 +310,7 @@ class FMIBistroMenuParser(MenuParser):
                 if dish_name:
                     ingredients = Ingredients("fmi-bistro")
                     ingredients.parse_ingredients(dish_allergen)
-                    dishes.append(Dish(dish_name, price, ingredients.ingredient_set))
+                    dishes.append(Dish(dish_name, price, ingredients.ingredient_set, "Tagesgericht"))
             dishes = dishes[:num_dishes]
             date = self.get_date(year, week_number, self.weekday_positions[key])
             # create new Menu object and add it to dict
@@ -461,13 +461,23 @@ class IPPBistroMenuParser(MenuParser):
             lines_weekdays[key] = ' '.join(lines_weekdays[key].split())
             # get all dish including name and price
             dish_names_price = re.findall(self.dish_regex, lines_weekdays[key] + ' ')
+            # create dish types
+            # since we have the same dish types every day we can use them if there are 4 dishes available
+            if len(dish_names_price) == 4:
+                dish_types = ["Veggie", "Traditionelle Küche", "Internationale Küche", "Specials"]
+            else:
+                dish_types = ["Tagesgericht"] * len(dish_names_price)
+
             # create ingredients
             # all dishes have the same ingridients
             ingredients = Ingredients("ipp-bistro")
             ingredients.parse_ingredients("Mi,Gl,Sf,Sl,Ei,Se,4")
             # create list of Dish objects
-            dishes = [Dish(dish_name.strip(), price.replace(',', '.').strip(), ingredients.ingredient_set)
-                      for (dish_name, price) in dish_names_price]
+            counter = 0
+            dishes = []
+            for (dish_name, price) in dish_names_price:
+                dishes.append(Dish(dish_name.strip(), price.replace(',', '.').strip(), ingredients.ingredient_set, dish_types[counter]))
+                counter += 1
             date = self.get_date(year, week_number, self.weekday_positions[key])
             # create new Menu object and add it to dict
             menu = Menu(date, dishes)
@@ -504,7 +514,7 @@ class MedizinerMensaMenuParser(MenuParser):
                 dish_price = float(x[0].replace("€", "").replace(",", ".").strip())
         dish_str = re.sub(self.price_regex, "", dish_str)
 
-        return Dish(dish_str, dish_price, dish_ingredients.ingredient_set)
+        return Dish(dish_str, dish_price, dish_ingredients.ingredient_set, "Tagesgericht")
 
     def parse(self, location):
         page = requests.get(self.startPageurl)
@@ -542,13 +552,27 @@ class MedizinerMensaMenuParser(MenuParser):
     def get_menus(self, text, year, week_number):
         menus = {}
         count = 0
-        lines = text.replace("Extraessen", "").splitlines()
+        lines = text.splitlines()
+
+        # get dish types
+        # its the line before the first "***..." line
+        dish_types_line = ""
+        last_non_empty_line = -1
+        for i in range(0, len(lines)):
+            if "***" in lines[i]:
+                if last_non_empty_line >= 0:
+                    dish_types_line = lines[last_non_empty_line]
+                break
+            elif lines[i]:
+                last_non_empty_line = i
+        dish_types = re.split(r"\s{2,}", dish_types_line)
+        dish_types = [dt for dt in dish_types if dt]
+
+        # get all dish lines
         for line in lines:
             if "Montag" in line:
                 break
-
             count += 1
-
         lines = lines[count:]
 
         # get rid of Zusatzstoffe and Allergene: everything below the last ***-delimiter is irrelevant
@@ -578,15 +602,31 @@ class MedizinerMensaMenuParser(MenuParser):
 
             soup_str = soup_str.replace("-\n", "").strip().replace("\n", " ")
             soup = self.parse_dish(soup_str)
+            if len(dish_types) > 0:
+                soup.dish_type = dish_types[0]
+            else:
+                soup.dish_type = "Suppe"
             dishes = []
             if (soup.name not in ["", "Feiertag"]):
                 dishes.append(soup)
             # https://regex101.com/r/MDFu1Z/1
+
+            # prepare dish type
+            dish_type = ""
+            if len(dish_types) > 1:
+                dish_type = dish_types[1]
+                
             for dish_str in re.split(r"(\n{2,}|(?<!mit)\n(?=[A-Z]))", mains_str):
+                if "Extraessen" in dish_str:
+                    # now only "Extraessen" will follow
+                    dish_type = "Extraessen"
+                    continue
                 dish_str = dish_str.strip().replace("\n", " ")
                 dish = self.parse_dish(dish_str)
                 dish.name = dish.name.strip()
                 if dish.name not in ["", "Feiertag"]:
+                    if dish_type:
+                        dish.dish_type = dish_type
                     dishes.append(dish)
 
             date = self.get_date(year, week_number, self.weekday_positions[key])

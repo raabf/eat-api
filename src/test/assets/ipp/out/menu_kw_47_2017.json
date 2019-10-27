@@ -19,7 +19,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Ofengulasch vom Rind mit Kürbis und Pflaumen, dazu Rigatoni",
@@ -32,7 +33,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "\"Palek Tofu\" Gebratener Tofu mit Spinat, Ingwer, Curry-Sahnesauce und Basmatireis",
@@ -45,7 +47,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "Gebratene Hähnchenbrust auf Fenchelgemüse, dazu Kräuterreis und Orangensauce",
@@ -58,7 +61,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 },
@@ -76,7 +80,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Jägerschnitzel mit Spätzle oder Reis",
@@ -89,7 +94,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "Vegetarisch gefüllte Tortelli mit leichter Zitronen-Buttersauce und gehobeltem Parmesan",
@@ -102,7 +108,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "\"Bami Goreng\" indonesische Bratnudeln mit Gemüse, Huhn, Schweinefleisch und Pilzen, dazu Honig-Chili- Dip",
@@ -115,7 +122,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 },
@@ -133,7 +141,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Hackbraten mit Zigeunersauce und Reis",
@@ -146,7 +155,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "\"Farfalle Rustico\" mit Champignons, Schinken Tomaten und Peperoni (auf Wunsch mit Reibekäse)",
@@ -159,7 +169,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "Rumpsteak mit Balsamico Pilzen und Wedges",
@@ -172,7 +183,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 },
@@ -190,7 +202,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Frischer Bayrischer Schweinenackenbraten vom Brett geschnitten dazu Kartoffel- Gurkensalat",
@@ -203,7 +216,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "\"Enchilada Verdura\", überbackene Weizentortilla, gefüllt mit Hähnchenfleisch, Sauerrahm, Kidneybohnen, Mais, dazu",
@@ -216,7 +230,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "\"Lamm Palak\" mit Spinat und Curry (mittelscharf), dazu Reis",
@@ -229,7 +244,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 },
@@ -247,7 +263,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Veggie"
                         },
                         {
                             "name": "Matjes \"Hausfrauen Art\" mit Salzkartoffeln",
@@ -260,7 +277,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Traditionelle Küche"
                         },
                         {
                             "name": "Currygeschnetzeltes von der Pute mit Früchten und Reis",
@@ -273,7 +291,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Internationale Küche"
                         },
                         {
                             "name": "Honig-Kassler mit Apfel-Spitzkohl und Kartoffelspalten",
@@ -286,7 +305,8 @@
                                 "Se",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Specials"
                         }
                     ]
                 }

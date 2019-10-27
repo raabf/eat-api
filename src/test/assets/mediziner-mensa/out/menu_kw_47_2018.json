@@ -14,7 +14,8 @@
                             "ingredients": [
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Pfannengyros mit Tzaziki",
@@ -22,7 +23,8 @@
                             "ingredients": [
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Spaghetti \" Gemüsebolognese \"",
@@ -30,7 +32,8 @@
                             "ingredients": [
                                 "Gl",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Thai-Curry aus Blumenkohl und Kartoffeln mit Gemüsreis und Salat",
@@ -40,7 +43,8 @@
                                 "Mi",
                                 "So",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Extraessen"
                         }
                     ]
                 },
@@ -53,7 +57,8 @@
                             "ingredients": [
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Grüner Bohneneintopf mit Rindfleisch",
@@ -61,7 +66,8 @@
                             "ingredients": [
                                 "R",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Veggi-Gulasch",
@@ -69,7 +75,8 @@
                             "ingredients": [
                                 "Gl",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Rotbarschfischfilet in Dillsoße mit Kürbisgemüse und Wacholderreis",
@@ -78,7 +85,8 @@
                                 "Fi",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Extraessen"
                         }
                     ]
                 },
@@ -91,7 +99,8 @@
                             "ingredients": [
                                 "R",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Schweinegulasch",
@@ -99,7 +108,8 @@
                             "ingredients": [
                                 "Gl",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Gemüsekuchen mit Mozzarella überbacken",
@@ -109,7 +119,8 @@
                                 "Gl",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Schinkennudeln mit Tomatensoße, dazu gemischter Salat",
@@ -123,7 +134,8 @@
                                 "Mi",
                                 "Sf",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Extraessen"
                         }
                     ]
                 },
@@ -136,7 +148,8 @@
                             "ingredients": [
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Rinderhackbraten",
@@ -148,7 +161,8 @@
                                 "R",
                                 "Sf",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Dinkel-Kräuterbratling",
@@ -157,7 +171,8 @@
                                 "Ei",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Pikantes Risotto mit buntem Gemüse und Tomatensalat mit Basilikum",
@@ -167,7 +182,8 @@
                                 "2",
                                 "Mi",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Extraessen"
                         }
                     ]
                 },
@@ -181,14 +197,16 @@
                                 "Ei",
                                 "Gl",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Gebratene Hähnchenbrust",
                             "price": "N/A",
                             "ingredients": [
                                 "G"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Scheiterhaufen mit Apfel-Vanille-Ragout",
@@ -200,7 +218,8 @@
                                 "Gl",
                                 "Mi",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Paniertes Schnitzel vom Schwein und Pute mit Kartoffelmayosalat und Zitronenecke",
@@ -213,7 +232,8 @@
                                 "Gl",
                                 "S",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Extraessen"
                         }
                     ]
                 },
@@ -226,7 +246,8 @@
                             "ingredients": [
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Pichelsteiner Gemüseeintopf mit Rindfleisch",
@@ -234,7 +255,8 @@
                             "ingredients": [
                                 "R",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Ofenkartoffel mit herzhaftem Gemüseragout",
@@ -243,7 +265,8 @@
                                 "Gl",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         }
                     ]
                 },
@@ -256,7 +279,8 @@
                             "ingredients": [
                                 "Ei",
                                 "Gl"
-                            ]
+                            ],
+                            "dish_type": "Suppe"
                         },
                         {
                             "name": "Glasierter Putenbraten in Kräuterrahmsoße",
@@ -265,7 +289,8 @@
                                 "G",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Eieromelett",
@@ -274,7 +299,8 @@
                                 "Ei",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Hauptkomponente"
                         }
                     ]
                 }

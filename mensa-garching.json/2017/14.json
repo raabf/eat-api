@@ -10,7 +10,8 @@
                     "price": 1.0,
                     "ingredients": [
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Gulasch vom Schwein",
@@ -22,7 +23,8 @@
                         "Kn",
                         "Mi",
                         "S"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Paniertes Hähnchenschnitzel",
@@ -34,32 +36,8 @@
                         "Kn",
                         "Mi",
                         "Sl"
-                    ]
-                },
-                {
-                    "name": "Pasta mit Tomaten-Zucchini",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ]
-                },
-                {
-                    "name": "Pasta mit Putenbolognese",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ]
-                },
-                {
-                    "name": "Kartoffeleintopf mit Majoran (2)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Sl"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         },
@@ -73,17 +51,21 @@
                         "2",
                         "Kn",
                         "Sf"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
-                    "name": "Countrykartoffeln mit Sahnequark und Petersilie",
-                    "price": 1.55,
+                    "name": "Pasta-Gemüse-Auflauf mit Tomatensauce",
+                    "price": 1.9,
                     "ingredients": [
+                        "1",
+                        "Ei",
                         "Gl",
                         "GlW",
                         "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Rinderroulade nach Hausfrauenart mit Senf-Gemüse-Sauce",
@@ -102,43 +84,8 @@
                         "Sf",
                         "Sl",
                         "Sw"
-                    ]
-                },
-                {
-                    "name": "Pasta-Gemüse-Auflauf",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "1",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ]
-                },
-                {
-                    "name": "Buntes Gemüse in scharfer Kokosmilch (2)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "2",
-                        "Kn",
-                        "Sf"
-                    ]
-                },
-                {
-                    "name": "Caserecce mit Würstel",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "1",
-                        "2",
-                        "3",
-                        "8",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "S",
-                        "Sf"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 }
             ]
         },
@@ -150,17 +97,19 @@
                     "price": 1.0,
                     "ingredients": [
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
-                    "name": "Schweinelachssteak mit Paprikasauce",
-                    "price": 2.4,
+                    "name": "Knöpflepfanne mit Putenfleisch und Gemüse",
+                    "price": 1.9,
                     "ingredients": [
+                        "Ei",
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "S"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Rheinischer Sauerbraten (GQB)",
@@ -176,34 +125,8 @@
                         "Sf",
                         "Sl",
                         "Sw"
-                    ]
-                },
-                {
-                    "name": "Knöpflepfanne mit Putenfleisch und Gemüse",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Sl"
-                    ]
-                },
-                {
-                    "name": "Pikanter Pilztopf mit Kartoffeln und Kraut (2)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Kn"
-                    ]
-                },
-                {
-                    "name": "Pasta mit Spargel und Erbsen",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "1",
-                        "Gl",
-                        "GlW",
-                        "Mi"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 }
             ]
         },
@@ -215,7 +138,8 @@
                     "price": 1.0,
                     "ingredients": [
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Schweinesteak Calabreser Art",
@@ -226,7 +150,8 @@
                         "GlW",
                         "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 },
                 {
                     "name": "Ungarisches Bio-Kartoffelgulasch mit Bio-Paprika",
@@ -235,33 +160,8 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
-                },
-                {
-                    "name": "Pasta Pomodori",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ]
-                },
-                {
-                    "name": "Gemüsepaella mit buntem Gemüse (2)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Kn"
-                    ]
-                },
-                {
-                    "name": "Pasta mit Lachs-Sahne-Sauce",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Fi",
-                        "Gl",
-                        "GlW",
-                        "Mi"
-                    ]
+                    ],
+                    "dish_type": "Biogericht 2"
                 }
             ]
         },
@@ -275,7 +175,8 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pfannkuchen mit Kirschfüllung dazu Vanillesauce",
@@ -285,7 +186,8 @@
                         "Gl",
                         "GlW",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Seelachs (MSC) im Backteig mit Remouladensauce",
@@ -300,38 +202,8 @@
                         "Gl",
                         "Mi",
                         "Sf"
-                    ]
-                },
-                {
-                    "name": "Zartweizen mit Tomaten, Zucchini und Auberginen (2)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ]
-                },
-                {
-                    "name": "Penne mit fruchtigem Putencurry (süß-scharf)",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "2",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Sf",
-                        "So"
-                    ]
-                },
-                {
-                    "name": "Pasta in Tomaten und Oliven",
-                    "price": "0.68€ / 100g",
-                    "ingredients": [
-                        "3",
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         }

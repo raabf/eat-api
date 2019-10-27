@@ -11,7 +11,8 @@
                         {
                             "name": "Kartoffelgulasch mit Paprika",
                             "price": 1.0,
-                            "ingredients": []
+                            "ingredients": [],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Hackfleischbällchen mit Champignonrahmsauce",
@@ -24,7 +25,8 @@
                                 "Mi",
                                 "R",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Hackfleischbällchen mit Champignonrahmsauce (2)",
@@ -37,7 +39,8 @@
                                 "Mi",
                                 "R",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Pasta Pomodori",
@@ -46,7 +49,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Gebackene Calamari-Ringe mit Zitronen-Knoblauch-Dip",
@@ -63,7 +67,8 @@
                                 "Mi",
                                 "Sf",
                                 "Wt"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         },
                         {
                             "name": "Seelachsfilet (MSC) im Sesammantel mit Zitronen-Knoblauch-Dip",
@@ -80,7 +85,8 @@
                                 "Mi",
                                 "Se",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         },
                         {
                             "name": "Pasta Pomodori (2)",
@@ -89,12 +95,14 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Kartoffelgulasch mit Paprika (2)",
                             "price": "0.68€ / 100g",
-                            "ingredients": []
+                            "ingredients": [],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Sojabolognese",
@@ -102,7 +110,8 @@
                             "ingredients": [
                                 "Sl",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -114,7 +123,8 @@
                             "price": 1.0,
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Schweinebraten mit Biersauce",
@@ -127,7 +137,8 @@
                                 "Kn",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Massamann Curry (mit Hähnchen)",
@@ -139,14 +150,16 @@
                                 "Kn",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         },
                         {
                             "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais (2)",
                             "price": "0.68€ / 100g",
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Bärlauchpesto",
@@ -154,7 +167,8 @@
                             "ingredients": [
                                 "Gl",
                                 "GlW"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Farfalle mit Thunfisch",
@@ -165,7 +179,8 @@
                                 "GlW",
                                 "Kn",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -179,7 +194,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Fleischpflanzerl mit Rahmsauce",
@@ -194,7 +210,8 @@
                                 "R",
                                 "S",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Gefüllte Paprikaschote mit Tomatensauce",
@@ -206,7 +223,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         },
                         {
                             "name": "Spätzle mit Hähnchen und Mais",
@@ -216,7 +234,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Champignonrahmsauce",
@@ -226,7 +245,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Couscous mit mediterranem Gemüse (2)",
@@ -235,7 +255,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -249,7 +270,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Käsekrainer mit Bratensauce",
@@ -266,7 +288,8 @@
                                 "R",
                                 "S",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Putenschnitzel auf Asia-Pfannengemüse",
@@ -277,7 +300,8 @@
                                 "GlW",
                                 "Se",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         },
                         {
                             "name": "Penne mit Zucchini und Hackfleisch",
@@ -287,7 +311,8 @@
                                 "GlW",
                                 "Kn",
                                 "R"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Bulgur mit Zucchini und Tomaten (2)",
@@ -296,7 +321,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Bio-Spaghetti mit Bio-Spinat-Sahnesauce",
@@ -306,7 +332,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -316,7 +343,8 @@
                         {
                             "name": "Buntes Pfannengemüse",
                             "price": 1.0,
-                            "ingredients": []
+                            "ingredients": [],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
@@ -326,7 +354,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Seelachs (MSC) Rhodos, mit Tomaten und Oliven",
@@ -338,7 +367,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 6"
                         },
                         {
                             "name": "Krautfleckerl mit Speck",
@@ -350,7 +380,8 @@
                                 "Gl",
                                 "GlW",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Sojabolognese",
@@ -361,12 +392,14 @@
                                 "Kn",
                                 "Sl",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Buntes Pfannengemüse (2)",
                             "price": "0.68€ / 100g",
-                            "ingredients": []
+                            "ingredients": [],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 }
@@ -384,7 +417,8 @@
                             "price": 1.0,
                             "ingredients": [
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Gulasch vom Schwein",
@@ -396,7 +430,8 @@
                                 "Kn",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Paniertes Hähnchenschnitzel",
@@ -408,7 +443,8 @@
                                 "Kn",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Pasta mit Tomaten-Zucchini",
@@ -417,7 +453,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Putenbolognese",
@@ -426,14 +463,16 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Kartoffeleintopf mit Majoran (2)",
                             "price": "0.68€ / 100g",
                             "ingredients": [
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -447,7 +486,8 @@
                                 "2",
                                 "Kn",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Countrykartoffeln mit Sahnequark und Petersilie",
@@ -457,7 +497,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Rinderroulade nach Hausfrauenart mit Senf-Gemüse-Sauce",
@@ -476,7 +517,8 @@
                                 "Sf",
                                 "Sl",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 6"
                         },
                         {
                             "name": "Pasta-Gemüse-Auflauf",
@@ -488,7 +530,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Buntes Gemüse in scharfer Kokosmilch (2)",
@@ -497,7 +540,8 @@
                                 "2",
                                 "Kn",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Caserecce mit Würstel",
@@ -512,7 +556,8 @@
                                 "Kn",
                                 "S",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -524,7 +569,8 @@
                             "price": 1.0,
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Schweinelachssteak mit Paprikasauce",
@@ -534,7 +580,8 @@
                                 "GlW",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Rheinischer Sauerbraten (GQB)",
@@ -550,7 +597,8 @@
                                 "Sf",
                                 "Sl",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 6"
                         },
                         {
                             "name": "Knöpflepfanne mit Putenfleisch und Gemüse",
@@ -560,14 +608,16 @@
                                 "Gl",
                                 "GlW",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pikanter Pilztopf mit Kartoffeln und Kraut (2)",
                             "price": "0.68€ / 100g",
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Spargel und Erbsen",
@@ -577,7 +627,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -589,7 +640,8 @@
                             "price": 1.0,
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Schweinesteak Calabreser Art",
@@ -600,7 +652,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         },
                         {
                             "name": "Ungarisches Bio-Kartoffelgulasch mit Bio-Paprika",
@@ -609,7 +662,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Biogericht 2"
                         },
                         {
                             "name": "Pasta Pomodori",
@@ -618,14 +672,16 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Gemüsepaella mit buntem Gemüse (2)",
                             "price": "0.68€ / 100g",
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Lachs-Sahne-Sauce",
@@ -635,7 +691,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -649,7 +706,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Pfannkuchen mit Kirschfüllung dazu Vanillesauce",
@@ -659,7 +717,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Seelachs (MSC) im Backteig mit Remouladensauce",
@@ -674,7 +733,8 @@
                                 "Gl",
                                 "Mi",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Zartweizen mit Tomaten, Zucchini und Auberginen (2)",
@@ -683,7 +743,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Penne mit fruchtigem Putencurry (süß-scharf)",
@@ -695,7 +756,8 @@
                                 "Kn",
                                 "Sf",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta in Tomaten und Oliven",
@@ -705,7 +767,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 }
@@ -726,7 +789,8 @@
                                 "GlG",
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Thailändische Frühlingsrolle mit Sweet Chilisauce",
@@ -740,7 +804,8 @@
                                 "Mi",
                                 "Sl",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Paniertes Truthahnschnitzel mit Currydip",
@@ -755,7 +820,8 @@
                                 "Mi",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Pasta Carbonara",
@@ -770,7 +836,8 @@
                                 "Mi",
                                 "S",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Graupen-Gemüse-Pfanne (2)",
@@ -780,7 +847,8 @@
                                 "GlG",
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Penne Rustica (pikant)",
@@ -791,7 +859,8 @@
                                 "GlW",
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -804,7 +873,8 @@
                             "ingredients": [
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Fleischpflanzerl mit Kümmelsauce",
@@ -819,7 +889,8 @@
                                 "R",
                                 "S",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Lammbraten in Oliven-Rosmarin-Sauce",
@@ -833,7 +904,8 @@
                                 "Kn",
                                 "Mi",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 8"
                         },
                         {
                             "name": "Tortellini (Käsefüllung) mit Käse-Sahne-Sauce",
@@ -846,7 +918,8 @@
                                 "Kn",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Nudelpfanne mit Pulled Pork",
@@ -856,7 +929,8 @@
                                 "GlW",
                                 "Kn",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Blumenkohl-Kartoffel-Curry (2)",
@@ -864,7 +938,8 @@
                             "ingredients": [
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -877,7 +952,8 @@
                             "ingredients": [
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Kartoffeltaschen mit Kräuterfrischkäse",
@@ -886,7 +962,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Esterhazygulasch vom Rind (GQB)",
@@ -899,7 +976,8 @@
                                 "Mi",
                                 "R",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         },
                         {
                             "name": "Italienischer Bohneneintopf (2)",
@@ -907,7 +985,8 @@
                             "ingredients": [
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Bunte Nudel-Hackfleisch-Pfanne",
@@ -917,7 +996,8 @@
                                 "GlW",
                                 "Kn",
                                 "R"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Bärlauchpesto",
@@ -925,7 +1005,8 @@
                             "ingredients": [
                                 "Gl",
                                 "GlW"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -939,7 +1020,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Ungarisches Würstelgulasch",
@@ -951,7 +1033,8 @@
                                 "R",
                                 "S",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Hähnchenschnitzel paniert mit Curry-Mango-Dip",
@@ -965,7 +1048,8 @@
                                 "GlW",
                                 "Mi",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Polentaschnitte an gedünstetem Blattspinat (2)",
@@ -974,7 +1058,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Spinat und Ei",
@@ -984,7 +1069,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Bio-Maultaschen mit Bio-Zwiebelsauce",
@@ -996,7 +1082,8 @@
                                 "GlW",
                                 "Kn",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 }
@@ -1016,7 +1103,8 @@
                                 "Kn",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Blätterteigtasche gefüllt mit Spinat und Hirtenkäse",
@@ -1028,7 +1116,8 @@
                                 "Kn",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Pikante Chickenwings mit Barbecuesauce",
@@ -1039,7 +1128,8 @@
                                 "Kn",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         },
                         {
                             "name": "Rigatoni mit Pesto rosso (scharf)",
@@ -1052,7 +1142,8 @@
                                 "Mi",
                                 "Sc",
                                 "ScM"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Fleckerl mit Schinken und Erbsen",
@@ -1065,7 +1156,8 @@
                                 "Gl",
                                 "GlW",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Indisches Linsencurry (2)",
@@ -1074,7 +1166,8 @@
                                 "Kn",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -1088,7 +1181,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Fränkische Bratwurst mit Sauerkraut",
@@ -1097,7 +1191,8 @@
                                 "8",
                                 "R",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Gekochte Rinderbrust (GQB) mit Meerrettichsauce",
@@ -1109,7 +1204,8 @@
                                 "Mi",
                                 "Sl",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 6"
                         },
                         {
                             "name": "Pasta mit Gorgonzolasauce",
@@ -1119,7 +1215,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Räucherlachs und frischem Dill in Zitronensauce",
@@ -1130,7 +1227,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Orientalischer Bulgur mit Kichererbsen und Spinat (2)",
@@ -1139,7 +1237,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -1154,7 +1253,8 @@
                                 "Kn",
                                 "Sf",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Putengulasch",
@@ -1164,7 +1264,8 @@
                                 "GlW",
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Kaiserschmarrn mit Apfelmus",
@@ -1175,7 +1276,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         },
                         {
                             "name": "Reis mit asiatischem Gemüse und Koriander (2)",
@@ -1185,7 +1287,8 @@
                                 "Kn",
                                 "Sf",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Bio-Penne mit Bio-Soja-Bolognese-Sauce",
@@ -1196,7 +1299,8 @@
                                 "Kn",
                                 "Mi",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Penne mit Zucchini und Hackfleisch",
@@ -1206,7 +1310,8 @@
                                 "GlW",
                                 "Kn",
                                 "R"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -1218,7 +1323,8 @@
                             "price": 1.0,
                             "ingredients": [
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Dampfnudel mit Vanillesauce",
@@ -1228,7 +1334,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Seelachsfilet (MSC) auf Blattspinat, Blattspinat",
@@ -1239,14 +1346,16 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         },
                         {
                             "name": "Grüner Erbseneintopf (2)",
                             "price": "0.68€ / 100g",
                             "ingredients": [
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit frischem Basilikum und Tomaten",
@@ -1255,7 +1364,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Budapester Nudelgericht (Pute)",
@@ -1265,7 +1375,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 }
@@ -1285,7 +1396,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
@@ -1300,7 +1412,8 @@
                                 "GlW",
                                 "Mi",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Dinkel-Pasta mit frischem Spargel und Rucolapesto",
@@ -1311,7 +1424,8 @@
                                 "Kn",
                                 "Sc",
                                 "ScM"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 6"
                         },
                         {
                             "name": "Schinkennudeln (Vorderschinken) mit Zwiebeln und Ei",
@@ -1325,7 +1439,8 @@
                                 "GlW",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Cornetti mit Spinat-Mandel-Pesto",
@@ -1336,7 +1451,8 @@
                                 "Kn",
                                 "Sc",
                                 "ScM"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Bulgur mit Zucchini und Tomaten (2)",
@@ -1345,7 +1461,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -1357,7 +1474,8 @@
                             "price": 1.0,
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Falafel mit Joghurt-Minz-Dip, Gurken-Minz-Joghurt-Dip",
@@ -1367,7 +1485,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Couscousbratling mit Paprika-Hummus (Kichererbsenmus)",
@@ -1378,7 +1497,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         },
                         {
                             "name": "Pfannengyros vom Schwein mit Tsatsiki",
@@ -1387,14 +1507,16 @@
                                 "Kn",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         },
                         {
                             "name": "Auberginencurry mit Kichererbsenreis (2)",
                             "price": "0.68€ / 100g",
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Ravioli mit Pilzfüllung",
@@ -1406,7 +1528,8 @@
                                 "Kn",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Farfalle in Puten-Paprikasauce",
@@ -1415,7 +1538,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -1427,7 +1551,8 @@
                             "price": 1.0,
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Spanferkelrollbraten mit Biersauce",
@@ -1440,7 +1565,8 @@
                                 "Kn",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Ofenkartoffel Mexican Style mit schwarzem Bohnenmus und Sour Cream",
@@ -1449,14 +1575,16 @@
                                 "Kn",
                                 "Mi",
                                 "Se"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         },
                         {
                             "name": "Gemüsegulasch (2)",
                             "price": "0.68€ / 100g",
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
@@ -1467,7 +1595,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Penne mit getrockneten Tomaten und Thunfisch",
@@ -1481,7 +1610,8 @@
                                 "Kn",
                                 "Mi",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -1495,7 +1625,8 @@
                                 "2",
                                 "Kn",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Quinoa-Salat mit Nüssen, Gurke, Rucola und Mandeldressing",
@@ -1504,7 +1635,8 @@
                                 "Sc",
                                 "ScH",
                                 "ScM"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         },
                         {
                             "name": "Grünes Hähnchen-Curry",
@@ -1515,7 +1647,8 @@
                                 "GlW",
                                 "Kn",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 7"
                         },
                         {
                             "name": "Pasta mit Bärlauchpesto",
@@ -1523,7 +1656,8 @@
                             "ingredients": [
                                 "Gl",
                                 "GlW"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pikante Nudelpfanne mit Schafskäse und Rindfleisch",
@@ -1535,7 +1669,8 @@
                                 "Kn",
                                 "Mi",
                                 "R"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Reistopf mit Chinagemüse (2)",
@@ -1544,7 +1679,8 @@
                                 "2",
                                 "Kn",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 },
@@ -1558,7 +1694,8 @@
                                 "Gl",
                                 "GlW",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Pfannkuchen mit Apfelmus",
@@ -1569,7 +1706,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Bauerneintopf mit Wiener",
@@ -1583,7 +1721,8 @@
                                 "R",
                                 "S",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Gedünsteter Kabeljau (MSC) auf Buchweizen-Rote-Beete-Risotto",
@@ -1593,7 +1732,8 @@
                                 "Fi",
                                 "Gl",
                                 "GlW"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 9"
                         },
                         {
                             "name": "Bauerneintopf (2)",
@@ -1602,7 +1742,8 @@
                                 "Gl",
                                 "GlW",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Nudelpfanne mit mediterranem Schmorgemüse",
@@ -1611,7 +1752,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         },
                         {
                             "name": "Spätzle mit Hähnchen und Mais",
@@ -1621,7 +1763,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Self-Service"
                         }
                     ]
                 }

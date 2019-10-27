@@ -14,14 +14,16 @@
                             "ingredients": [
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         },
                         {
                             "name": "Kurkumareis mit Asia Wokgemüse",
                             "price": 3.6,
                             "ingredients": [
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         },
                         {
                             "name": "Kartoffel „Cordon Bleu“ mit Frischkäse gefüllt dazu Blattsalate",
@@ -30,7 +32,8 @@
                                 "Ei",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         },
                         {
                             "name": "Putenschnitzel natur mit Paprikarahmsoße dazu Ebly Gemüseweizen",
@@ -38,7 +41,8 @@
                             "ingredients": [
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         }
                     ]
                 },
@@ -51,14 +55,16 @@
                             "ingredients": [
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         },
                         {
                             "name": "Süßkartoffel Gemüsepfanne",
                             "price": 3.6,
                             "ingredients": [
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         },
                         {
                             "name": "Gemüse Nudelauflauf",
@@ -67,7 +73,8 @@
                                 "Gl",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         },
                         {
                             "name": "Hähnchenspieß in Kokos Currysoße dazu Früchtereis",
@@ -75,7 +82,8 @@
                             "ingredients": [
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         }
                     ]
                 },
@@ -88,21 +96,24 @@
                             "ingredients": [
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         },
                         {
                             "name": "Antipasti Rosmarinkartoffeln",
                             "price": 3.6,
                             "ingredients": [
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         },
                         {
                             "name": "Schlemmerfilet auf Antipasti Rosmarinkartoffeln",
                             "price": 4.5,
                             "ingredients": [
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         },
                         {
                             "name": "Kaiserschmarrn mit Zwetschenröster",
@@ -111,7 +122,8 @@
                                 "Ei",
                                 "Gl",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht"
                         }
                     ]
                 }

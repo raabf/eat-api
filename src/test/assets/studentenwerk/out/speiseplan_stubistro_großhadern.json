@@ -16,7 +16,8 @@
                                 "GlW",
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Hackfleischbällchen mit Champignonrahmsauce",
@@ -29,7 +30,8 @@
                                 "Mi",
                                 "R",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         }
                     ]
                 },
@@ -46,7 +48,8 @@
                                 "Kn",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Rotes Gemüsecurry",
@@ -54,7 +57,8 @@
                             "ingredients": [
                                 "2",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         }
                     ]
                 },
@@ -75,7 +79,8 @@
                                 "S",
                                 "Sf",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Gefüllte Paprikaschote mit Tomatensauce",
@@ -87,7 +92,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         }
                     ]
                 },
@@ -103,7 +109,8 @@
                                 "GlW",
                                 "Se",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         },
                         {
                             "name": "Bio-Spaghetti mit Bio-Spinat-Sahnesauce",
@@ -113,7 +120,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Biogericht 2"
                         }
                     ]
                 },
@@ -128,7 +136,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Seelachs (MSC) Rhodos, mit Tomaten und Oliven",
@@ -140,7 +149,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 6"
                         }
                     ]
                 }
@@ -160,7 +170,8 @@
                                 "1",
                                 "Mi",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Gulasch vom Schwein",
@@ -172,7 +183,8 @@
                                 "Kn",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         }
                     ]
                 },
@@ -189,7 +201,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Rinderroulade nach Hausfrauenart mit Senf-Gemüse-Sauce",
@@ -208,7 +221,8 @@
                                 "Sf",
                                 "Sl",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 6"
                         }
                     ]
                 },
@@ -223,7 +237,8 @@
                                 "Gl",
                                 "GlW",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Rindergeschnetzeltes mit Paprika (GQB)",
@@ -237,7 +252,8 @@
                                 "Mi",
                                 "R",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 6"
                         }
                     ]
                 },
@@ -249,7 +265,8 @@
                             "price": 1.55,
                             "ingredients": [
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Schweinesteak Calabreser Art",
@@ -260,7 +277,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         }
                     ]
                 },
@@ -275,7 +293,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Seelachs (MSC) im Backteig mit Remouladensauce",
@@ -290,7 +309,8 @@
                                 "Gl",
                                 "Mi",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         }
                     ]
                 }
@@ -315,7 +335,8 @@
                                 "Mi",
                                 "Sl",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Paniertes Truthahnschnitzel mit Currydip",
@@ -330,7 +351,8 @@
                                 "Mi",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         }
                     ]
                 },
@@ -348,7 +370,8 @@
                                 "Kn",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Lammgulasch Provence",
@@ -360,7 +383,8 @@
                                 "Kn",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 8"
                         }
                     ]
                 },
@@ -374,7 +398,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Esterhazygulasch vom Rind",
@@ -387,7 +412,8 @@
                                 "Mi",
                                 "R",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         }
                     ]
                 },
@@ -402,7 +428,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Paniertes Hähnchenschnitzel mit Grüner Sauce",
@@ -413,7 +440,8 @@
                                 "GlW",
                                 "Mi",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         }
                     ]
                 }
@@ -436,7 +464,8 @@
                                 "Kn",
                                 "Mi",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Pikante Chickenwings mit Barbecuesauce",
@@ -447,7 +476,8 @@
                                 "Kn",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         }
                     ]
                 },
@@ -461,7 +491,8 @@
                                 "8",
                                 "R",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Rahmchampignons mit Semmelknödel",
@@ -472,7 +503,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         }
                     ]
                 },
@@ -488,7 +520,8 @@
                                 "Kn",
                                 "Mi",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Putengulasch",
@@ -498,7 +531,8 @@
                                 "GlW",
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         }
                     ]
                 },
@@ -513,7 +547,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         },
                         {
                             "name": "Seelachsfilet (MSC) auf Blattspinat, Blattspinat",
@@ -524,7 +559,8 @@
                                 "GlW",
                                 "Kn",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 3"
                         }
                     ]
                 }
@@ -544,7 +580,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
@@ -559,7 +596,8 @@
                                 "GlW",
                                 "Mi",
                                 "Sf"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         }
                     ]
                 },
@@ -573,7 +611,8 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 2"
                         },
                         {
                             "name": "Pfannengyros vom Schwein mit Tsatsiki",
@@ -582,7 +621,8 @@
                                 "Kn",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 4"
                         }
                     ]
                 },
@@ -597,7 +637,8 @@
                                 "Mi",
                                 "Sf",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Spanferkelrollbraten mit Biersauce",
@@ -609,7 +650,8 @@
                                 "Kn",
                                 "Mi",
                                 "S"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 4"
                         }
                     ]
                 },
@@ -625,7 +667,8 @@
                                 "GlW",
                                 "Kn",
                                 "Sl"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
                             "name": "Grünes Hähnchen-Curry",
@@ -636,7 +679,8 @@
                                 "GlW",
                                 "Kn",
                                 "So"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 7"
                         }
                     ]
                 },
@@ -652,7 +696,8 @@
                                 "Gl",
                                 "GlW",
                                 "Mi"
-                            ]
+                            ],
+                            "dish_type": "Tagesgericht 2"
                         },
                         {
                             "name": "Pochiertes Kabeljaufilet (MSC) mit Sauce béarnaise",
@@ -666,7 +711,8 @@
                                 "Mi",
                                 "Sl",
                                 "Sw"
-                            ]
+                            ],
+                            "dish_type": "Aktionsessen 8"
                         }
                     ]
                 }
