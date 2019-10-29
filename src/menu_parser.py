@@ -4,39 +4,46 @@ import re
 import sys
 import tempfile
 import unicodedata
-from datetime import datetime
+from datetime import datetime, date
 from subprocess import call
 from warnings import warn
+from typing import Dict, List, Union, Tuple
+from abc import ABC, abstractmethod
 
 import requests
 from lxml import html
 
 import util
-from entities import Dish, Menu, Ingredients
+from entities import Dish, Menu, Ingredients, Price
 
 
-class MenuParser:
+class MenuParser(ABC):
+    """
+    Abstract menu parser class.
+    """
+
     # we use datetime %u, so we go from 1-7
-    weekday_positions = {"mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6, "sun": 7}
+    weekday_positions: Dict[str, int] = {"mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6, "sun": 7}
 
     @staticmethod
-    def get_date(year, week_number, day):
+    def get_date(year: int, week_number: int, day: int):
         # get date from year, week number and current weekday
         # https://stackoverflow.com/questions/17087314/get-date-from-week-number
         # but use the %G for year and %V for the week since in Germany we use ISO 8601 for week numbering
-        date_format = "%G-W%V-%u"
-        date_str = "%d-W%d-%d"
+        date_format: str = "%G-W%V-%u"
+        date_str: str = "%d-W%d-%d"
 
         date = datetime.strptime(date_str % (year, week_number, day), date_format).date()
 
         return date
 
-    def parse(self, location):
+    @abstractmethod
+    def parse(self, location: str):
         pass
 
 
 class StudentenwerkMenuParser(MenuParser):
-    prices = {
+    prices: Dict[str, Union[float, str]] = {
         "Tagesgericht 1": 1, "Tagesgericht 2": 1.55, "Tagesgericht 3": 1.9, "Tagesgericht 4": 2.4,
         "Aktionsessen 1": 1.55, "Aktionsessen 2": 1.9, "Aktionsessen 3": 2.4, "Aktionsessen 4": 2.6,
         "Aktionsessen 5": 2.8, "Aktionsessen 6": 3.0, "Aktionsessen 7": 3.2, "Aktionsessen 8": 3.5, "Aktionsessen 9": 4,
@@ -51,7 +58,7 @@ class StudentenwerkMenuParser(MenuParser):
     # Some of the locations do not use the general Studentenwerk system and do not have a location id.
     # It differs how they publish their menus — probably everyone needs an own parser.
     # For documentation they are in the list but commented out.
-    location_id_mapping = {
+    location_id_mapping: Dict[str, int] = {
         "mensa-arcisstr": 421,
         "mensa-arcisstrasse": 421,  # backwards compatibility
         "mensa-garching": 422,
@@ -81,12 +88,12 @@ class StudentenwerkMenuParser(MenuParser):
         # "stucafe-weihenstephan": ,
     }
 
-    base_url = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{}_-de.html"
+    base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{}_-de.html"
 
-    def parse(self, location):
+    def parse(self, location: str):
         """`location` can be either the numeric location id or its string alias as defined in `location_id_mapping`"""
         try:
-            location_id = int(location)
+            location_id: int = int(location)
         except ValueError:
             try:
                 location_id = self.location_id_mapping[location]
@@ -95,18 +102,18 @@ class StudentenwerkMenuParser(MenuParser):
                     location, ', '.join(self.location_id_mapping.keys())), sys.stderr)
                 return None
 
-        page_link = self.base_url.format(location_id)
+        page_link: str = self.base_url.format(location_id)
 
-        page = requests.get(page_link)
+        page: requests.Response = requests.get(page_link)
         tree = html.fromstring(page.content)
         return self.get_menus(tree, location)
 
     def get_menus(self, page, location):
         # initialize empty dictionary
-        menus = {}
+        menus: Dict[date, Menu] = dict()
         # convert passed date to string
         # get all available daily menus
-        daily_menus = self.__get_daily_menus_as_html(page)
+        daily_menus: page.xpath = self.__get_daily_menus_as_html(page)
 
         # iterate through daily menus
         for daily_menu in daily_menus:
@@ -116,7 +123,7 @@ class StudentenwerkMenuParser(MenuParser):
             current_menu_date_str = menu_html.xpath("//strong/text()")[0]
             # parse date
             try:
-                current_menu_date = util.parse_date(current_menu_date_str)
+                current_menu_date: date = util.parse_date(current_menu_date_str)
             except ValueError as e:
                 print("Warning: Error during parsing date from html page. Problematic date: %s" % current_menu_date_str)
                 # continue and parse subsequent menus
@@ -134,17 +141,17 @@ class StudentenwerkMenuParser(MenuParser):
     @staticmethod
     def __get_daily_menus_as_html(page):
         # obtain all daily menus found in the passed html page by xpath query
-        daily_menus = page.xpath("//div[@class='c-schedule__item']")
+        daily_menus: page.xpath = page.xpath("//div[@class='c-schedule__item']")
         return daily_menus
 
     @staticmethod
     def __parse_dishes(menu_html, location):
         # obtain the names of all dishes in a passed menu
-        dish_names = [dish.rstrip() for dish in menu_html.xpath("//p[@class='js-schedule-dish-description']/text()")]
+        dish_names: List[str] = [dish.rstrip() for dish in menu_html.xpath("//p[@class='js-schedule-dish-description']/text()")]
         # make duplicates unique by adding (2), (3) etc. to the names
         dish_names = util.make_duplicates_unique(dish_names)
         # obtain the types of the dishes (e.g. 'Tagesgericht 1')
-        dish_types = [type.text if type.text else '' for type in menu_html.xpath("//span[@class='stwm-artname']")]
+        dish_types: List[str] = [type.text if type.text else '' for type in menu_html.xpath("//span[@class='stwm-artname']")]
         # obtain all ingredients
         dish_markers_additional = menu_html.xpath(
             "//span[contains(@class, 'c-schedule__marker--additional')]/@data-essen")
@@ -152,26 +159,26 @@ class StudentenwerkMenuParser(MenuParser):
         dish_markers_type = menu_html.xpath("//span[contains(@class, 'c-schedule__marker--type')]/@data-essen")
 
         # create dictionary out of dish name and dish type
-        dishes_dict = {}
-        dishes_tup = zip(dish_names, dish_types, dish_markers_additional, dish_markers_allergen, dish_markers_type)
+        dishes_dict: Dict[str, Tuple[str, str, str, str]] = dict()
+        dishes_tup: Tuple[str, str, str, str] = zip(dish_names, dish_types, dish_markers_additional, dish_markers_allergen, dish_markers_type)
         for dish_name, dish_type, dish_marker_additional, dish_marker_allergen, dish_marker_type in dishes_tup:
             dishes_dict[dish_name] = (dish_type, dish_marker_additional, dish_marker_allergen, dish_marker_type)
 
         # create Dish objects with correct prices; if price is not available, -1 is used instead
-        dishes = []
+        dishes: List[Dish] = list()
         for name in dishes_dict:
             if not dishes_dict[name] and dishes:
                 # some dishes are multi-row. That means that for the same type the dish is written in multiple rows.
                 # From the second row on the type is then just empty. In that case, we just use the price and
                 # ingredients of the previous dish.
-                dishes.append(Dish(name, dishes[-1].price, dishes[-1].ingredients, dishes[-1].dish_type))
+                dishes.append(Dish(name, Price(dishes[-1].price), dishes[-1].ingredients))
             else:
-                dish_ingredients = Ingredients(location)
+                dish_ingredients: Ingredients = Ingredients(location)
                 dish_ingredients.parse_ingredients(dishes_dict[name][1])
                 dish_ingredients.parse_ingredients(dishes_dict[name][2])
                 dish_ingredients.parse_ingredients(dishes_dict[name][3])
-                dishes.append(Dish(name, StudentenwerkMenuParser.prices.get(dishes_dict[name][0], "N/A"),
-                                   dish_ingredients.ingredient_set, dishes_dict[name][0]))
+                dishes.append(Dish(name, Price(StudentenwerkMenuParser.prices.get(dishes_dict[name][0], "N/A")),
+                                   dish_ingredients.ingredient_set))
 
         return dishes
 
