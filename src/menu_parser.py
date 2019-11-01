@@ -43,6 +43,7 @@ class MenuParser(ABC):
 
 
 class StudentenwerkMenuParser(MenuParser):
+    # Probably deprecated old prices
     prices: Dict[str, Union[float, str]] = {
         "Tagesgericht 1": 1, "Tagesgericht 2": 1.55, "Tagesgericht 3": 1.9, "Tagesgericht 4": 2.4,
         "Aktionsessen 1": 1.55, "Aktionsessen 2": 1.9, "Aktionsessen 3": 2.4, "Aktionsessen 4": 2.6,
@@ -54,6 +55,62 @@ class StudentenwerkMenuParser(MenuParser):
         "Fast Lane": "Fast Lane (> 3.50€)", "Länder-Mensa": "0.75€ / 100g", "Mensa Spezial Pasta": "0.60€ / 100g",
         "Mensa Spezial": "individual",  # 0.85€ / 100g (one-course dishes have individual prices)
     }
+
+    # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
+
+    # Base price for sausage, meat, fish
+    prices_self_service_base: Tuple[float, float, float] = (0.55, 1.00, 1.50)
+    # Meet and vegetarian base prices for Students, Staff, Guests
+    prices_self_service_classic: Tuple[Price, Price, Price] = (Price(0, 0.75, "100g"), Price(0, 0.90, "100g"), Price(0, 1.05, "100g"))
+    # Vegan, stew and soup prices for students, staff, guests
+    prices_self_service_vegan: Tuple[Price, Price, Price] = (Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g"))
+
+    # Students, Staff, Guests
+    prices_mesa_leopoldstr: Dict[str, Tuple[Price, Price, Price]] = {
+        "Grüne Mensa": (Price("N/A"), Price("N/A"), Price("N/A")),
+        "Vegan": (Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g")),
+        "Vegetarisch": (Price(0, 0.75, "100g"), Price(0, 0.85, "100g"), Price(0, 0.95, "100g")),
+        "Suppe": (Price(0.55), Price(0.65), Price(0.80)),
+        "Länder-Mensa": (Price("N/A"), Price("N/A"), Price("N/A")),
+        "Länder Menü": (Price(0, 0.75, "100g"), Price(0, 0.85, "100g"), Price(0, 0.95, "100g")),
+        "Länder-Suppe": (Price(0.55), Price(0.65), Price(0.80)),
+        "Mensa Klassiker": (Price("N/A"), Price("N/A"), Price("N/A")),
+        "Klassik Menü": (Price(0, 0.85, "100g"), Price(0, 0.90, "100g"), Price(0, 1, "100g")),
+        "Klassik Tellergericht": (Price("N/A"), Price("N/A"), Price("N/A")),
+        "Klassik Suppe": (Price(0.55), Price(0.65), Price(0.80)),
+        "Mensa Spezial Pasta": (Price("N/A"), Price("N/A"), Price("N/A")),
+        "Pasta-Menü": (Price(0, 0.60, "100g"), Price(0, 0.70, "100g"), Price(0, 0.80, "100g")),
+        "Beilagen": (Price(0.60), Price(0.77), Price(0.92)),
+        "Aktionssalat 3": (Price(0.80), Price(1.14), Price(1.34)),
+        "Dessert": (Price(0.60), Price(0.77), Price(0.92)),
+        "Aktionsdessert 3": (Price(0.80), Price(1.14), Price(1.34)),
+        "Aktionsdessert 4": (Price(1), Price(1.34), Price(1.54)),
+        "Frische Säfte": (Price(1.50), Price(1.50), Price(1.50))
+    }
+
+    @staticmethod
+    def __getPrice(location: str, dish: Tuple[str, str, str, str, str]):
+        if "Self-Service" in dish[0] or location == "mensa-garching":
+            if dish[4] == "0": # Meat
+                price: Price = StudentenwerkMenuParser.prices_self_service_classic[0]
+                # Add a base price to the dish
+                if "Fi" in dish[2]: # Fish
+                    price.base_price = StudentenwerkMenuParser.prices_self_service_base[2]
+                else: # Sausage and meat. TODO: Find a way to distinguish between sausage and meat
+                    price.base_price = StudentenwerkMenuParser.prices_self_service_base[1]
+                return price
+            elif dish[4] == "1": # Vegetarian
+                return StudentenwerkMenuParser.prices_self_service_classic[0]
+            elif dish[4] == "2":  # Vegan
+                return StudentenwerkMenuParser.prices_self_service_vegan[0]
+            else:
+                pass
+
+        if location == "mensa-leopoldstr":
+            return StudentenwerkMenuParser.prices_mesa_leopoldstr.get(dish[0], Price("N/A"))
+        
+        # Fall back to the old price
+        return Price(StudentenwerkMenuParser.prices.get(dish[0], "N/A"))
 
     # Some of the locations do not use the general Studentenwerk system and do not have a location id.
     # It differs how they publish their menus — probably everyone needs an own parser.
@@ -105,15 +162,15 @@ class StudentenwerkMenuParser(MenuParser):
         page_link: str = self.base_url.format(location_id)
 
         page: requests.Response = requests.get(page_link)
-        tree = html.fromstring(page.content)
+        tree: html.Element = html.fromstring(page.content)
         return self.get_menus(tree, location)
 
-    def get_menus(self, page, location):
+    def get_menus(self, page: html.Element, location: str):
         # initialize empty dictionary
         menus: Dict[date, Menu] = dict()
         # convert passed date to string
         # get all available daily menus
-        daily_menus: page.xpath = self.__get_daily_menus_as_html(page)
+        daily_menus: html.Element = self.__get_daily_menus_as_html(page)
 
         # iterate through daily menus
         for daily_menu in daily_menus:
@@ -124,14 +181,14 @@ class StudentenwerkMenuParser(MenuParser):
             # parse date
             try:
                 current_menu_date: date = util.parse_date(current_menu_date_str)
-            except ValueError as e:
+            except ValueError:
                 print("Warning: Error during parsing date from html page. Problematic date: %s" % current_menu_date_str)
                 # continue and parse subsequent menus
                 continue
             # parse dishes of current menu
-            dishes = self.__parse_dishes(menu_html, location)
+            dishes: List[Dish] = self.__parse_dishes(menu_html, location)
             # create menu object
-            menu = Menu(current_menu_date, dishes)
+            menu: Menu = Menu(current_menu_date, dishes)
             # add menu object to dictionary using the date as key
             menus[current_menu_date] = menu
 
@@ -153,16 +210,16 @@ class StudentenwerkMenuParser(MenuParser):
         # obtain the types of the dishes (e.g. 'Tagesgericht 1')
         dish_types: List[str] = [type.text if type.text else '' for type in menu_html.xpath("//span[@class='stwm-artname']")]
         # obtain all ingredients
-        dish_markers_additional = menu_html.xpath(
-            "//span[contains(@class, 'c-schedule__marker--additional')]/@data-essen")
-        dish_markers_allergen = menu_html.xpath("//span[contains(@class, 'c-schedule__marker--allergen')]/@data-essen")
-        dish_markers_type = menu_html.xpath("//span[contains(@class, 'c-schedule__marker--type')]/@data-essen")
+        dish_markers_additional: List[str] = menu_html.xpath("//li[contains(@class, 'c-schedule__list-item  u-clearfix  clearfix  js-menu__list-item')]/@data-essen-zusatz")
+        dish_markers_allergen: List[str] = menu_html.xpath("//li[contains(@class, 'c-schedule__list-item  u-clearfix  clearfix  js-menu__list-item')]/@data-essen-allergene")
+        dish_markers_type: List[str] = menu_html.xpath("//li[contains(@class, 'c-schedule__list-item  u-clearfix  clearfix  js-menu__list-item')]/@data-essen-typ")
+        dish_markers_meetless: List[str] = menu_html.xpath("//li[contains(@class, 'c-schedule__list-item  u-clearfix  clearfix  js-menu__list-item')]/@data-essen-fleischlos")
 
         # create dictionary out of dish name and dish type
-        dishes_dict: Dict[str, Tuple[str, str, str, str]] = dict()
-        dishes_tup: Tuple[str, str, str, str] = zip(dish_names, dish_types, dish_markers_additional, dish_markers_allergen, dish_markers_type)
-        for dish_name, dish_type, dish_marker_additional, dish_marker_allergen, dish_marker_type in dishes_tup:
-            dishes_dict[dish_name] = (dish_type, dish_marker_additional, dish_marker_allergen, dish_marker_type)
+        dishes_dict: Dict[str, Tuple[str, str, str, str, str]] = dict()
+        dishes_tup: zip = zip(dish_names, dish_types, dish_markers_additional, dish_markers_allergen, dish_markers_type, dish_markers_meetless)
+        for dish_name, dish_type, dish_marker_additional, dish_marker_allergen, dish_marker_type, dish_marker_meetless in dishes_tup:
+            dishes_dict[dish_name] = (dish_type, dish_marker_additional, dish_marker_allergen, dish_marker_type, dish_marker_meetless)
 
         # create Dish objects with correct prices; if price is not available, -1 is used instead
         dishes: List[Dish] = list()
@@ -177,8 +234,8 @@ class StudentenwerkMenuParser(MenuParser):
                 dish_ingredients.parse_ingredients(dishes_dict[name][1])
                 dish_ingredients.parse_ingredients(dishes_dict[name][2])
                 dish_ingredients.parse_ingredients(dishes_dict[name][3])
-                dishes.append(Dish(name, Price(StudentenwerkMenuParser.prices.get(dishes_dict[name][0], "N/A")),
-                                   dish_ingredients.ingredient_set))
+                price: Price = StudentenwerkMenuParser.__getPrice(location, dishes_dict[name])
+                dishes.append(Dish(name, price, dish_ingredients.ingredient_set))
 
         return dishes
 
