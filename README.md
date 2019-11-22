@@ -1,6 +1,6 @@
 # eat-api
 
-[![Build Status](https://travis-ci.org/srehwald/eat-api.svg?branch=master)](https://travis-ci.org/srehwald/eat-api)
+[![Actions Status](https://github.com/TUM-Dev/eat-api/workflows/CI%2FCD/badge.svg)](https://github.com/TUM-Dev/eat-api/actions)
 
 Simple static API for the canteens of the [Studentenwerk München](http://www.studentenwerk-muenchen.de) as well as some other locations. By now, the following locations are supported:
 
@@ -96,13 +96,13 @@ Based on: [Studentenwerk München](https://www.studentenwerk-muenchen.de/mensa/s
 ### API
 The actual API is provided by static JSON files, which can be found in the gh-pages branch of this repository. These files are created through automatic travis builds. You need to structure a link as follows in order to access the API:
 ```
-https://srehwald.github.io/eat-api/<location>/<year>/<week-number>.json
+https://tum-dev.github.io/eat-api/<location>/<year>/<week-number>.json
 ```
 
 #### Example
-The following link would give you the menu of Mensa Garching for week 9 in 2017:
+The following link would give you the menu of Mensa Garching for week 20 in 2019:
 ```
-https://srehwald.github.io/eat-api/mensa-garching/2017/09.json
+https://tum-dev.github.io/eat-api/mensa-garching/2019/20.json
 ```
 
 ### CLI
@@ -148,7 +148,7 @@ Here are some sample calls:
 $ python src/main.py mensa-garching
 
 # Get the menu for April 2 at mensa-arcisstrasse
-$ python src/main.py mensa-arcisstrasse -d 02.04.2017
+$ python src/main.py mensa-arcisstrasse -d 02.04.2019
 ```
 
 ## Projects using `eat-api`
