@@ -10,7 +10,11 @@
                     "dishes": [
                         {
                             "name": "Pasta mit Gemüsebolognese",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -21,7 +25,11 @@
                         },
                         {
                             "name": "Hackfleischbällchen mit Champignonrahmsauce",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -40,7 +48,11 @@
                     "dishes": [
                         {
                             "name": "Schweinebraten mit Biersauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -53,7 +65,11 @@
                         },
                         {
                             "name": "Rotes Gemüsecurry",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Kn"
@@ -67,7 +83,11 @@
                     "dishes": [
                         {
                             "name": "Hackbraten mit Rahmsauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -84,7 +104,11 @@
                         },
                         {
                             "name": "Gefüllte Paprikaschote mit Tomatensauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "Gl",
@@ -102,7 +126,11 @@
                     "dishes": [
                         {
                             "name": "Putenschnitzel auf Asia-Pfannengemüse",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Gl",
@@ -114,7 +142,11 @@
                         },
                         {
                             "name": "Bio-Spaghetti mit Bio-Spinat-Sahnesauce",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -130,7 +162,11 @@
                     "dishes": [
                         {
                             "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -141,7 +177,11 @@
                         },
                         {
                             "name": "Seelachs (MSC) Rhodos, mit Tomaten und Oliven",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "3",
                                 "Fi",
@@ -165,7 +205,11 @@
                     "dishes": [
                         {
                             "name": "Kartoffelrösti mit Sauerrahmdip",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "Mi",
@@ -175,7 +219,11 @@
                         },
                         {
                             "name": "Gulasch vom Schwein",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -193,7 +241,11 @@
                     "dishes": [
                         {
                             "name": "Pasta-Gemüse-Auflauf mit Tomatensauce",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "Ei",
@@ -206,7 +258,11 @@
                         },
                         {
                             "name": "Rinderroulade nach Hausfrauenart mit Senf-Gemüse-Sauce",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -231,7 +287,11 @@
                     "dishes": [
                         {
                             "name": "Knöpflepfanne mit Gemüse und Pilzen",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -242,7 +302,11 @@
                         },
                         {
                             "name": "Rindergeschnetzeltes mit Paprika (GQB)",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "99",
                                 "Gl",
@@ -262,7 +326,11 @@
                     "dishes": [
                         {
                             "name": "Gemüsepaella mit buntem Gemüse",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -270,7 +338,11 @@
                         },
                         {
                             "name": "Schweinesteak Calabreser Art",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -287,7 +359,11 @@
                     "dishes": [
                         {
                             "name": "Pfannkuchen mit Kirschfüllung dazu Vanillesauce",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -298,7 +374,11 @@
                         },
                         {
                             "name": "Seelachs (MSC) im Backteig mit Remouladensauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -325,7 +405,11 @@
                     "dishes": [
                         {
                             "name": "Thailändische Frühlingsrolle mit Sweet Chilisauce",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Ei",
@@ -340,7 +424,11 @@
                         },
                         {
                             "name": "Paniertes Truthahnschnitzel mit Currydip",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "3",
@@ -361,7 +449,11 @@
                     "dishes": [
                         {
                             "name": "Tortellini (Käsefüllung) mit Käse-Sahne-Sauce",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "Ei",
@@ -375,7 +467,11 @@
                         },
                         {
                             "name": "Lammgulasch Provence",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -393,7 +489,11 @@
                     "dishes": [
                         {
                             "name": "Kartoffeltaschen mit Kräuterfrischkäse",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -403,7 +503,11 @@
                         },
                         {
                             "name": "Esterhazygulasch vom Rind",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -422,7 +526,11 @@
                     "dishes": [
                         {
                             "name": "Penne all'arrabiata",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Gl",
@@ -433,7 +541,11 @@
                         },
                         {
                             "name": "Paniertes Hähnchenschnitzel mit Grüner Sauce",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -456,7 +568,11 @@
                     "dishes": [
                         {
                             "name": "Blätterteigtasche gefüllt mit Spinat und Hirtenkäse",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -469,7 +585,11 @@
                         },
                         {
                             "name": "Pikante Chickenwings mit Barbecuesauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "10",
                                 "11",
@@ -486,7 +606,11 @@
                     "dishes": [
                         {
                             "name": "Fränkische Bratwurst mit Sauerkraut",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "8",
                                 "R",
@@ -496,7 +620,11 @@
                         },
                         {
                             "name": "Rahmchampignons mit Semmelknödel",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -513,7 +641,11 @@
                     "dishes": [
                         {
                             "name": "Penne mit Soja-Bolognese-Sauce",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -525,7 +657,11 @@
                         },
                         {
                             "name": "Putengulasch",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -541,7 +677,11 @@
                     "dishes": [
                         {
                             "name": "Dampfnudel mit Vanillesauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -552,7 +692,11 @@
                         },
                         {
                             "name": "Seelachsfilet (MSC) auf Blattspinat, Blattspinat",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Fi",
                                 "Gl",
@@ -575,7 +719,11 @@
                     "dishes": [
                         {
                             "name": "Pasta mit Tomatensauce",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -585,7 +733,11 @@
                         },
                         {
                             "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -606,7 +758,11 @@
                     "dishes": [
                         {
                             "name": "Falafel mit Gemüsecouscous",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -616,7 +772,11 @@
                         },
                         {
                             "name": "Pfannengyros vom Schwein mit Tsatsiki",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn",
                                 "Mi",
@@ -631,7 +791,11 @@
                     "dishes": [
                         {
                             "name": "Ofenkartoffel mit Frühlingsdip",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "Mi",
@@ -642,7 +806,11 @@
                         },
                         {
                             "name": "Spanferkelrollbraten mit Biersauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -660,7 +828,11 @@
                     "dishes": [
                         {
                             "name": "Mediterrane Schupfnudelpfanne mit frischem Gemüse",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -672,7 +844,11 @@
                         },
                         {
                             "name": "Grünes Hähnchen-Curry",
-                            "price": 3.2,
+                            "price": {
+                                "base_price": 3.2,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "En",
                                 "Gl",
@@ -689,7 +865,11 @@
                     "dishes": [
                         {
                             "name": "Pfannkuchen mit Apfelmus",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "3",
                                 "Ei",
@@ -701,7 +881,11 @@
                         },
                         {
                             "name": "Pochiertes Kabeljaufilet (MSC) mit Sauce béarnaise",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "99",
                                 "Ei",

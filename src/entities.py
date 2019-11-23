@@ -221,11 +221,13 @@ class Dish:
     name: str
     price: Price
     ingredients: Ingredients
+    dish_type: str
 
-    def __init__(self, name: str, price: Price, ingredients: Ingredients):
+    def __init__(self, name: str, price: Price, ingredients: Ingredients, dish_type: str):
         self.name = name
         self.price = price
         self.ingredients = ingredients
+        self.dish_type = dish_type
 
     def __repr__(self):
         return "%s %s: %s" % (self.name, str(sorted(self.ingredients)), self.price)
@@ -234,16 +236,17 @@ class Dish:
         if isinstance(other, self.__class__):
             return (self.name == other.name
                     and self.price == other.price
-                    and self.ingredients == other.ingredients)
+                    and self.ingredients == other.ingredients
+                    and self.dish_type == other.dish_type)
         return False
 
     def to_json_obj(self):
         return {"name": self.name, "price": self.price.to_json_obj(),
-             "ingredients": sorted(self.ingredients)}
+             "ingredients": sorted(self.ingredients), "dish_type": self.dish_type}
 
     def __hash__(self):
         # http://stackoverflow.com/questions/4005318/how-to-implement-a-good-hash-function-in-python
-        return (hash(self.name) << 1) ^ hash(self.price) ^ hash(frozenset(self.ingredients))
+        return (hash(self.name) << 1) ^ hash(self.price) ^ hash(frozenset(self.ingredients)) ^ hash(self.dish_type)
 
 
 class Menu:

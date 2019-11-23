@@ -10,13 +10,21 @@
                     "dishes": [
                         {
                             "name": "Kartoffelgulasch mit Paprika",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [],
                             "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Hackfleischbällchen mit Champignonrahmsauce",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -30,7 +38,11 @@
                         },
                         {
                             "name": "Hackfleischbällchen mit Champignonrahmsauce (2)",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -44,7 +56,11 @@
                         },
                         {
                             "name": "Pasta Pomodori",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -54,7 +70,11 @@
                         },
                         {
                             "name": "Gebackene Calamari-Ringe mit Zitronen-Knoblauch-Dip",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -72,7 +92,11 @@
                         },
                         {
                             "name": "Seelachsfilet (MSC) im Sesammantel mit Zitronen-Knoblauch-Dip",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "3",
@@ -90,7 +114,11 @@
                         },
                         {
                             "name": "Pasta Pomodori (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -100,13 +128,21 @@
                         },
                         {
                             "name": "Kartoffelgulasch mit Paprika (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [],
                             "dish_type": "Self-Service"
                         },
                         {
                             "name": "Pasta mit Sojabolognese",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Sl",
                                 "So"
@@ -120,7 +156,11 @@
                     "dishes": [
                         {
                             "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -128,7 +168,11 @@
                         },
                         {
                             "name": "Schweinebraten mit Biersauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "99",
                                 "Gl",
@@ -142,7 +186,11 @@
                         },
                         {
                             "name": "Massamann Curry (mit Hähnchen)",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "En",
                                 "Gl",
@@ -155,7 +203,11 @@
                         },
                         {
                             "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -163,7 +215,11 @@
                         },
                         {
                             "name": "Pasta mit Bärlauchpesto",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW"
@@ -172,7 +228,11 @@
                         },
                         {
                             "name": "Farfalle mit Thunfisch",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Fi",
                                 "Gl",
@@ -189,7 +249,11 @@
                     "dishes": [
                         {
                             "name": "Couscous mit mediterranem Gemüse",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -199,7 +263,11 @@
                         },
                         {
                             "name": "Fleischpflanzerl mit Rahmsauce",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -215,7 +283,11 @@
                         },
                         {
                             "name": "Gefüllte Paprikaschote mit Tomatensauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "Gl",
@@ -228,7 +300,11 @@
                         },
                         {
                             "name": "Spätzle mit Hähnchen und Mais",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -239,7 +315,11 @@
                         },
                         {
                             "name": "Pasta mit Champignonrahmsauce",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -250,7 +330,11 @@
                         },
                         {
                             "name": "Couscous mit mediterranem Gemüse (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -265,7 +349,11 @@
                     "dishes": [
                         {
                             "name": "Bulgur mit Zucchini und Tomaten",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -275,7 +363,11 @@
                         },
                         {
                             "name": "Käsekrainer mit Bratensauce",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -293,7 +385,11 @@
                         },
                         {
                             "name": "Putenschnitzel auf Asia-Pfannengemüse",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Gl",
@@ -305,7 +401,11 @@
                         },
                         {
                             "name": "Penne mit Zucchini und Hackfleisch",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -316,7 +416,11 @@
                         },
                         {
                             "name": "Bulgur mit Zucchini und Tomaten (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -326,7 +430,11 @@
                         },
                         {
                             "name": "Bio-Spaghetti mit Bio-Spinat-Sahnesauce",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -342,13 +450,21 @@
                     "dishes": [
                         {
                             "name": "Buntes Pfannengemüse",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [],
                             "dish_type": "Tagesgericht 1"
                         },
                         {
                             "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -359,7 +475,11 @@
                         },
                         {
                             "name": "Seelachs (MSC) Rhodos, mit Tomaten und Oliven",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "3",
                                 "Fi",
@@ -372,7 +492,11 @@
                         },
                         {
                             "name": "Krautfleckerl mit Speck",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -385,7 +509,11 @@
                         },
                         {
                             "name": "Pasta mit Sojabolognese",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -397,7 +525,11 @@
                         },
                         {
                             "name": "Buntes Pfannengemüse (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [],
                             "dish_type": "Self-Service"
                         }
@@ -414,7 +546,11 @@
                     "dishes": [
                         {
                             "name": "Kartoffeleintopf mit Majoran",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Sl"
                             ],
@@ -422,7 +558,11 @@
                         },
                         {
                             "name": "Gulasch vom Schwein",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -435,7 +575,11 @@
                         },
                         {
                             "name": "Paniertes Hähnchenschnitzel",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -448,7 +592,11 @@
                         },
                         {
                             "name": "Pasta mit Tomaten-Zucchini",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -458,7 +606,11 @@
                         },
                         {
                             "name": "Pasta mit Putenbolognese",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -468,7 +620,11 @@
                         },
                         {
                             "name": "Kartoffeleintopf mit Majoran (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Sl"
                             ],
@@ -481,7 +637,11 @@
                     "dishes": [
                         {
                             "name": "Buntes Gemüse in scharfer Kokosmilch",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Kn",
@@ -491,7 +651,11 @@
                         },
                         {
                             "name": "Countrykartoffeln mit Sahnequark und Petersilie",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -502,7 +666,11 @@
                         },
                         {
                             "name": "Rinderroulade nach Hausfrauenart mit Senf-Gemüse-Sauce",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -522,7 +690,11 @@
                         },
                         {
                             "name": "Pasta-Gemüse-Auflauf",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "1",
                                 "Ei",
@@ -535,7 +707,11 @@
                         },
                         {
                             "name": "Buntes Gemüse in scharfer Kokosmilch (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "Kn",
@@ -545,7 +721,11 @@
                         },
                         {
                             "name": "Caserecce mit Würstel",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -566,7 +746,11 @@
                     "dishes": [
                         {
                             "name": "Pikanter Pilztopf mit Kartoffeln und Kraut",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -574,7 +758,11 @@
                         },
                         {
                             "name": "Schweinelachssteak mit Paprikasauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -585,7 +773,11 @@
                         },
                         {
                             "name": "Rheinischer Sauerbraten (GQB)",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "99",
                                 "Gl",
@@ -602,7 +794,11 @@
                         },
                         {
                             "name": "Knöpflepfanne mit Putenfleisch und Gemüse",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -613,7 +809,11 @@
                         },
                         {
                             "name": "Pikanter Pilztopf mit Kartoffeln und Kraut (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -621,7 +821,11 @@
                         },
                         {
                             "name": "Pasta mit Spargel und Erbsen",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "1",
                                 "Gl",
@@ -637,7 +841,11 @@
                     "dishes": [
                         {
                             "name": "Gemüsepaella mit buntem Gemüse",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -645,7 +853,11 @@
                         },
                         {
                             "name": "Schweinesteak Calabreser Art",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -657,7 +869,11 @@
                         },
                         {
                             "name": "Ungarisches Bio-Kartoffelgulasch mit Bio-Paprika",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -667,7 +883,11 @@
                         },
                         {
                             "name": "Pasta Pomodori",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -677,7 +897,11 @@
                         },
                         {
                             "name": "Gemüsepaella mit buntem Gemüse (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -685,7 +909,11 @@
                         },
                         {
                             "name": "Pasta mit Lachs-Sahne-Sauce",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Fi",
                                 "Gl",
@@ -701,7 +929,11 @@
                     "dishes": [
                         {
                             "name": "Zartweizen mit Tomaten, Zucchini und Auberginen",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -711,7 +943,11 @@
                         },
                         {
                             "name": "Pfannkuchen mit Kirschfüllung dazu Vanillesauce",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -722,7 +958,11 @@
                         },
                         {
                             "name": "Seelachs (MSC) im Backteig mit Remouladensauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -738,7 +978,11 @@
                         },
                         {
                             "name": "Zartweizen mit Tomaten, Zucchini und Auberginen (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -748,7 +992,11 @@
                         },
                         {
                             "name": "Penne mit fruchtigem Putencurry (süß-scharf)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "Gl",
@@ -761,7 +1009,11 @@
                         },
                         {
                             "name": "Pasta in Tomaten und Oliven",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "3",
                                 "Gl",
@@ -783,7 +1035,11 @@
                     "dishes": [
                         {
                             "name": "Graupen-Gemüse-Pfanne",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -794,7 +1050,11 @@
                         },
                         {
                             "name": "Thailändische Frühlingsrolle mit Sweet Chilisauce",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Ei",
@@ -809,7 +1069,11 @@
                         },
                         {
                             "name": "Paniertes Truthahnschnitzel mit Currydip",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "3",
@@ -825,7 +1089,11 @@
                         },
                         {
                             "name": "Pasta Carbonara",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -841,7 +1109,11 @@
                         },
                         {
                             "name": "Graupen-Gemüse-Pfanne (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -852,7 +1124,11 @@
                         },
                         {
                             "name": "Penne Rustica (pikant)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "Gl",
@@ -869,7 +1145,11 @@
                     "dishes": [
                         {
                             "name": "Blumenkohl-Kartoffel-Curry",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn",
                                 "Sl"
@@ -878,7 +1158,11 @@
                         },
                         {
                             "name": "Fleischpflanzerl mit Kümmelsauce",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -894,7 +1178,11 @@
                         },
                         {
                             "name": "Lammbraten in Oliven-Rosmarin-Sauce",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "3",
                                 "99",
@@ -909,7 +1197,11 @@
                         },
                         {
                             "name": "Tortellini (Käsefüllung) mit Käse-Sahne-Sauce",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "1",
                                 "Ei",
@@ -923,7 +1215,11 @@
                         },
                         {
                             "name": "Nudelpfanne mit Pulled Pork",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -934,7 +1230,11 @@
                         },
                         {
                             "name": "Blumenkohl-Kartoffel-Curry (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Kn",
                                 "Sl"
@@ -948,7 +1248,11 @@
                     "dishes": [
                         {
                             "name": "Italienischer Bohneneintopf",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn",
                                 "Sl"
@@ -957,7 +1261,11 @@
                         },
                         {
                             "name": "Kartoffeltaschen mit Kräuterfrischkäse",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -967,7 +1275,11 @@
                         },
                         {
                             "name": "Esterhazygulasch vom Rind (GQB)",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlG",
@@ -981,7 +1293,11 @@
                         },
                         {
                             "name": "Italienischer Bohneneintopf (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Kn",
                                 "Sl"
@@ -990,7 +1306,11 @@
                         },
                         {
                             "name": "Bunte Nudel-Hackfleisch-Pfanne",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1001,7 +1321,11 @@
                         },
                         {
                             "name": "Pasta mit Bärlauchpesto",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW"
@@ -1015,7 +1339,11 @@
                     "dishes": [
                         {
                             "name": "Polentaschnitte an gedünstetem Blattspinat",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1025,7 +1353,11 @@
                         },
                         {
                             "name": "Ungarisches Würstelgulasch",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -1038,7 +1370,11 @@
                         },
                         {
                             "name": "Hähnchenschnitzel paniert mit Curry-Mango-Dip",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "3",
@@ -1053,7 +1389,11 @@
                         },
                         {
                             "name": "Polentaschnitte an gedünstetem Blattspinat (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1063,7 +1403,11 @@
                         },
                         {
                             "name": "Pasta mit Spinat und Ei",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -1074,7 +1418,11 @@
                         },
                         {
                             "name": "Bio-Maultaschen mit Bio-Zwiebelsauce",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -1098,7 +1446,11 @@
                     "dishes": [
                         {
                             "name": "Indisches Linsencurry",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn",
                                 "Sf",
@@ -1108,7 +1460,11 @@
                         },
                         {
                             "name": "Blätterteigtasche gefüllt mit Spinat und Hirtenkäse",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -1121,7 +1477,11 @@
                         },
                         {
                             "name": "Pikante Chickenwings mit Barbecuesauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "10",
                                 "11",
@@ -1133,7 +1493,11 @@
                         },
                         {
                             "name": "Rigatoni mit Pesto rosso (scharf)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "Ei",
@@ -1147,7 +1511,11 @@
                         },
                         {
                             "name": "Fleckerl mit Schinken und Erbsen",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -1161,7 +1529,11 @@
                         },
                         {
                             "name": "Indisches Linsencurry (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Kn",
                                 "Sf",
@@ -1176,7 +1548,11 @@
                     "dishes": [
                         {
                             "name": "Orientalischer Bulgur mit Kichererbsen und Spinat",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1186,7 +1562,11 @@
                         },
                         {
                             "name": "Fränkische Bratwurst mit Sauerkraut",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "8",
                                 "R",
@@ -1196,7 +1576,11 @@
                         },
                         {
                             "name": "Gekochte Rinderbrust (GQB) mit Meerrettichsauce",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "3",
                                 "Gl",
@@ -1209,7 +1593,11 @@
                         },
                         {
                             "name": "Pasta mit Gorgonzolasauce",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1220,7 +1608,11 @@
                         },
                         {
                             "name": "Pasta mit Räucherlachs und frischem Dill in Zitronensauce",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Fi",
                                 "Gl",
@@ -1232,7 +1624,11 @@
                         },
                         {
                             "name": "Orientalischer Bulgur mit Kichererbsen und Spinat (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1247,7 +1643,11 @@
                     "dishes": [
                         {
                             "name": "Reis mit asiatischem Gemüse und Koriander",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Kn",
@@ -1258,7 +1658,11 @@
                         },
                         {
                             "name": "Putengulasch",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1269,7 +1673,11 @@
                         },
                         {
                             "name": "Kaiserschmarrn mit Apfelmus",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "3",
                                 "Ei",
@@ -1281,7 +1689,11 @@
                         },
                         {
                             "name": "Reis mit asiatischem Gemüse und Koriander (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "Kn",
@@ -1292,7 +1704,11 @@
                         },
                         {
                             "name": "Bio-Penne mit Bio-Soja-Bolognese-Sauce",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1304,7 +1720,11 @@
                         },
                         {
                             "name": "Penne mit Zucchini und Hackfleisch",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1320,7 +1740,11 @@
                     "dishes": [
                         {
                             "name": "Grüner Erbseneintopf",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Sl"
                             ],
@@ -1328,7 +1752,11 @@
                         },
                         {
                             "name": "Dampfnudel mit Vanillesauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -1339,7 +1767,11 @@
                         },
                         {
                             "name": "Seelachsfilet (MSC) auf Blattspinat, Blattspinat",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Fi",
                                 "Gl",
@@ -1351,7 +1783,11 @@
                         },
                         {
                             "name": "Grüner Erbseneintopf (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Sl"
                             ],
@@ -1359,7 +1795,11 @@
                         },
                         {
                             "name": "Pasta mit frischem Basilikum und Tomaten",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1369,7 +1809,11 @@
                         },
                         {
                             "name": "Budapester Nudelgericht (Pute)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1391,7 +1835,11 @@
                     "dishes": [
                         {
                             "name": "Bulgur mit Zucchini und Tomaten",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1401,7 +1849,11 @@
                         },
                         {
                             "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -1417,7 +1869,11 @@
                         },
                         {
                             "name": "Dinkel-Pasta mit frischem Spargel und Rucolapesto",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlD",
@@ -1429,7 +1885,11 @@
                         },
                         {
                             "name": "Schinkennudeln (Vorderschinken) mit Zwiebeln und Ei",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -1444,7 +1904,11 @@
                         },
                         {
                             "name": "Cornetti mit Spinat-Mandel-Pesto",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1456,7 +1920,11 @@
                         },
                         {
                             "name": "Bulgur mit Zucchini und Tomaten (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1471,7 +1939,11 @@
                     "dishes": [
                         {
                             "name": "Auberginencurry mit Kichererbsenreis",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -1479,7 +1951,11 @@
                         },
                         {
                             "name": "Falafel mit Joghurt-Minz-Dip, Gurken-Minz-Joghurt-Dip",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1490,7 +1966,11 @@
                         },
                         {
                             "name": "Couscousbratling mit Paprika-Hummus (Kichererbsenmus)",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Ei",
@@ -1502,7 +1982,11 @@
                         },
                         {
                             "name": "Pfannengyros vom Schwein mit Tsatsiki",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn",
                                 "Mi",
@@ -1512,7 +1996,11 @@
                         },
                         {
                             "name": "Auberginencurry mit Kichererbsenreis (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -1520,7 +2008,11 @@
                         },
                         {
                             "name": "Ravioli mit Pilzfüllung",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -1533,7 +2025,11 @@
                         },
                         {
                             "name": "Farfalle in Puten-Paprikasauce",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1548,7 +2044,11 @@
                     "dishes": [
                         {
                             "name": "Gemüsegulasch",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -1556,7 +2056,11 @@
                         },
                         {
                             "name": "Spanferkelrollbraten mit Biersauce",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "99",
                                 "Gl",
@@ -1570,7 +2074,11 @@
                         },
                         {
                             "name": "Ofenkartoffel Mexican Style mit schwarzem Bohnenmus und Sour Cream",
-                            "price": 2.6,
+                            "price": {
+                                "base_price": 2.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Kn",
                                 "Mi",
@@ -1580,7 +2088,11 @@
                         },
                         {
                             "name": "Gemüsegulasch (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Kn"
                             ],
@@ -1588,7 +2100,11 @@
                         },
                         {
                             "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "1",
                                 "Ei",
@@ -1600,7 +2116,11 @@
                         },
                         {
                             "name": "Penne mit getrockneten Tomaten und Thunfisch",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "Ei",
@@ -1620,7 +2140,11 @@
                     "dishes": [
                         {
                             "name": "Reistopf mit Chinagemüse",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "Kn",
@@ -1630,7 +2154,11 @@
                         },
                         {
                             "name": "Quinoa-Salat mit Nüssen, Gurke, Rucola und Mandeldressing",
-                            "price": 2.4,
+                            "price": {
+                                "base_price": 2.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Sc",
                                 "ScH",
@@ -1640,7 +2168,11 @@
                         },
                         {
                             "name": "Grünes Hähnchen-Curry",
-                            "price": 3.2,
+                            "price": {
+                                "base_price": 3.2,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "En",
                                 "Gl",
@@ -1652,7 +2184,11 @@
                         },
                         {
                             "name": "Pasta mit Bärlauchpesto",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW"
@@ -1661,7 +2197,11 @@
                         },
                         {
                             "name": "Pikante Nudelpfanne mit Schafskäse und Rindfleisch",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "Gl",
@@ -1674,7 +2214,11 @@
                         },
                         {
                             "name": "Reistopf mit Chinagemüse (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "2",
                                 "Kn",
@@ -1689,7 +2233,11 @@
                     "dishes": [
                         {
                             "name": "Bauerneintopf",
-                            "price": 1.0,
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1699,7 +2247,11 @@
                         },
                         {
                             "name": "Pfannkuchen mit Apfelmus",
-                            "price": 1.55,
+                            "price": {
+                                "base_price": 1.55,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "3",
                                 "Ei",
@@ -1711,7 +2263,11 @@
                         },
                         {
                             "name": "Bauerneintopf mit Wiener",
-                            "price": 1.9,
+                            "price": {
+                                "base_price": 1.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -1726,7 +2282,11 @@
                         },
                         {
                             "name": "Gedünsteter Kabeljau (MSC) auf Buchweizen-Rote-Beete-Risotto",
-                            "price": 4.0,
+                            "price": {
+                                "base_price": 4.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "9",
                                 "Fi",
@@ -1737,7 +2297,11 @@
                         },
                         {
                             "name": "Bauerneintopf (2)",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1747,7 +2311,11 @@
                         },
                         {
                             "name": "Nudelpfanne mit mediterranem Schmorgemüse",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 0.0,
+                                "price_per_unit": 0.33,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Gl",
                                 "GlW",
@@ -1757,7 +2325,11 @@
                         },
                         {
                             "name": "Spätzle mit Hähnchen und Mais",
-                            "price": "0.68€ / 100g",
+                            "price": {
+                                "base_price": 1.0,
+                                "price_per_unit": 0.75,
+                                "unit": "100g"
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",

@@ -228,14 +228,17 @@ class StudentenwerkMenuParser(MenuParser):
                 # some dishes are multi-row. That means that for the same type the dish is written in multiple rows.
                 # From the second row on the type is then just empty. In that case, we just use the price and
                 # ingredients of the previous dish.
-                dishes.append(Dish(name, Price(dishes[-1].price), dishes[-1].ingredients))
+                dishes.append(Dish(name, Price(dishes[-1].price), dishes[-1].ingredients, dishes[-1].dish_type))
             else:
                 dish_ingredients: Ingredients = Ingredients(location)
+                # parse ingredients
                 dish_ingredients.parse_ingredients(dishes_dict[name][1])
                 dish_ingredients.parse_ingredients(dishes_dict[name][2])
                 dish_ingredients.parse_ingredients(dishes_dict[name][3])
+                # find price
                 price: Price = StudentenwerkMenuParser.__getPrice(location, dishes_dict[name])
-                dishes.append(Dish(name, price, dish_ingredients.ingredient_set))
+                # create dish
+                dishes.append(Dish(name, price, dish_ingredients.ingredient_set, dishes_dict[name][0]))
 
         return dishes
 
@@ -364,7 +367,7 @@ class FMIBistroMenuParser(MenuParser):
             # get dish prices
             prices = re.findall(self.price_regex, ' '.join(dish_names))
             # convert prices to float
-            prices = [float(price.replace("€", "").replace(",", ".").strip()) for price in prices]
+            prices = [Price(float(price.replace("€", "").replace(",", ".").strip())) for price in prices]
             # remove price and commas from dish names
             dish_names = [re.sub(self.price_regex, "", dish).replace(",", "").strip() for dish in dish_names]
             # create list of Dish objects; only take first 3/4 as the following dishes are corrupt and not necessary
@@ -540,7 +543,7 @@ class IPPBistroMenuParser(MenuParser):
             counter = 0
             dishes = []
             for (dish_name, price) in dish_names_price:
-                dishes.append(Dish(dish_name.strip(), price.replace(',', '.').strip(), ingredients.ingredient_set, dish_types[counter]))
+                dishes.append(Dish(dish_name.strip(), Price(price.replace(',', '.').strip()), ingredients.ingredient_set, dish_types[counter]))
                 counter += 1
             date = self.get_date(year, week_number, self.weekday_positions[key])
             # create new Menu object and add it to dict
@@ -572,10 +575,10 @@ class MedizinerMensaMenuParser(MenuParser):
         dish_str = dish_str.replace(" , ", ", ")
 
         # price
-        dish_price = "N/A"
+        dish_price = Price("N/A")
         for x in re.findall(self.price_regex, dish_str):
             if len(x) > 0:
-                dish_price = float(x[0].replace("€", "").replace(",", ".").strip())
+                dish_price = Price(float(x[0].replace("€", "").replace(",", ".").strip()))
         dish_str = re.sub(self.price_regex, "", dish_str)
 
         return Dish(dish_str, dish_price, dish_ingredients.ingredient_set, "Tagesgericht")

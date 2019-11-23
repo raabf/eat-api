@@ -10,7 +10,11 @@
                     "dishes": [
                         {
                             "name": "Wirsing-Kartoffelauflauf mit Bechamel und Käse",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -24,7 +28,11 @@
                         },
                         {
                             "name": "Paprikarahm Geschnetzeltes mit Paprikamix und Nudeln",
-                            "price": 4.8,
+                            "price": {
+                                "base_price": 4.8,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -38,7 +46,11 @@
                         },
                         {
                             "name": "\"Dal Curry\" mit Kartoffeln, Kokosmilch, Ingwer, Koriander, Reis und scharfem Chutney",
-                            "price": 4.9,
+                            "price": {
+                                "base_price": 4.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -52,7 +64,11 @@
                         },
                         {
                             "name": "Deftiger Hüttenschmaus, Rinderrostbraten mit Zwiebeln, Semmelknödel und gebratenem Gemüse",
-                            "price": 7.9,
+                            "price": {
+                                "base_price": 7.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -71,7 +87,11 @@
                     "dishes": [
                         {
                             "name": "Herbstliche Gemüse-Reis Pfanne mit pikantem Mango Dip",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -85,7 +105,11 @@
                         },
                         {
                             "name": "Krautwickerl mit Speck-Zwieblsauce und Püree",
-                            "price": 4.5,
+                            "price": {
+                                "base_price": 4.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -99,7 +123,11 @@
                         },
                         {
                             "name": "Rigatoni mit Rosenkohl und Schnittlauch",
-                            "price": 4.6,
+                            "price": {
+                                "base_price": 4.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -113,7 +141,11 @@
                         },
                         {
                             "name": "Spanferkelrücken mit Knödel und Bayerisch Kraut",
-                            "price": 6.8,
+                            "price": {
+                                "base_price": 6.8,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -132,7 +164,11 @@
                     "dishes": [
                         {
                             "name": "Weißwurst Gröst ́l mit Knödel, Lauchzwiebeln, Karotten und Kräuter auf Wunsch mit Bratenjus",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -146,7 +182,11 @@
                         },
                         {
                             "name": "Estragonrahmschnitzel mit Pommes frites oder Reis",
-                            "price": 4.6,
+                            "price": {
+                                "base_price": 4.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -160,7 +200,11 @@
                         },
                         {
                             "name": "Gemüse Lasagne",
-                            "price": 4.9,
+                            "price": {
+                                "base_price": 4.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -174,7 +218,11 @@
                         },
                         {
                             "name": "\"Tandoori Chicken\" mit Auberginen, Tomaten, Zucchini, Zitronenschale Minze und Reis",
-                            "price": 6.9,
+                            "price": {
+                                "base_price": 6.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -193,7 +241,11 @@
                     "dishes": [
                         {
                             "name": "Rote Beete Eintopf mit Kartoffeln, Nudeln und Dill",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -207,7 +259,11 @@
                         },
                         {
                             "name": "Sauerbraten \"Nepal\" mit weißen Bohnen, getrockneten Tomaten und Pasta",
-                            "price": 5.8,
+                            "price": {
+                                "base_price": 5.8,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -221,7 +277,11 @@
                         },
                         {
                             "name": "\"Kaku Chicken\" mit geröstetem Curry, Kokosraspel, Tomaten und Reis",
-                            "price": 6.9,
+                            "price": {
+                                "base_price": 6.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -235,7 +295,11 @@
                         },
                         {
                             "name": "Leberkäs Burger special mit Pommes frites und Cole slaw",
-                            "price": 4.8,
+                            "price": {
+                                "base_price": 4.8,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -254,7 +318,11 @@
                     "dishes": [
                         {
                             "name": "Exotische Linsen-Spätzle Pfanne",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -268,7 +336,11 @@
                         },
                         {
                             "name": "Seelachsfilet gebacken mit Sardellenmayonnaise und Pommes frites",
-                            "price": 4.6,
+                            "price": {
+                                "base_price": 4.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -282,7 +354,11 @@
                         },
                         {
                             "name": "Gemüse-Linguini mit Pesto-Rahmsauce und Parmesankäse",
-                            "price": 4.4,
+                            "price": {
+                                "base_price": 4.4,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -296,7 +372,11 @@
                         },
                         {
                             "name": "Schweinefilet Medaillons in grüner Pfefferrahmsauce mit Kroketten und karamellisierten Möhren",
-                            "price": 7.2,
+                            "price": {
+                                "base_price": 7.2,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",

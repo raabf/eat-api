@@ -7,7 +7,11 @@
             "dishes": [
                 {
                     "name": "Kartoffeleintopf mit Majoran",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Sl"
                     ],
@@ -15,7 +19,11 @@
                 },
                 {
                     "name": "Gulasch vom Schwein",
-                    "price": 1.9,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlG",
@@ -28,7 +36,11 @@
                 },
                 {
                     "name": "Paniertes Hähnchenschnitzel",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlG",
@@ -46,7 +58,11 @@
             "dishes": [
                 {
                     "name": "Buntes Gemüse in scharfer Kokosmilch",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "2",
                         "Kn",
@@ -56,7 +72,11 @@
                 },
                 {
                     "name": "Pasta-Gemüse-Auflauf mit Tomatensauce",
-                    "price": 1.9,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "1",
                         "Ei",
@@ -69,7 +89,11 @@
                 },
                 {
                     "name": "Rinderroulade nach Hausfrauenart mit Senf-Gemüse-Sauce",
-                    "price": 3.0,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "2",
                         "3",
@@ -94,7 +118,11 @@
             "dishes": [
                 {
                     "name": "Pikanter Pilztopf mit Kartoffeln und Kraut",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Kn"
                     ],
@@ -102,7 +130,11 @@
                 },
                 {
                     "name": "Knöpflepfanne mit Putenfleisch und Gemüse",
-                    "price": 1.9,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -113,7 +145,11 @@
                 },
                 {
                     "name": "Rheinischer Sauerbraten (GQB)",
-                    "price": 3.0,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "99",
                         "Gl",
@@ -135,7 +171,11 @@
             "dishes": [
                 {
                     "name": "Gemüsepaella mit buntem Gemüse",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Kn"
                     ],
@@ -143,7 +183,11 @@
                 },
                 {
                     "name": "Schweinesteak Calabreser Art",
-                    "price": 2.6,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlG",
@@ -155,7 +199,11 @@
                 },
                 {
                     "name": "Ungarisches Bio-Kartoffelgulasch mit Bio-Paprika",
-                    "price": 1.9,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -170,7 +218,11 @@
             "dishes": [
                 {
                     "name": "Zartweizen mit Tomaten, Zucchini und Auberginen",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -180,7 +232,11 @@
                 },
                 {
                     "name": "Pfannkuchen mit Kirschfüllung dazu Vanillesauce",
-                    "price": 1.9,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -191,7 +247,11 @@
                 },
                 {
                     "name": "Seelachs (MSC) im Backteig mit Remouladensauce",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "1",
                         "2",

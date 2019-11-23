@@ -18,7 +18,11 @@
                     "dishes": [
                         {
                             "name": "Kirschmichel mit Vanillesauce",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -32,7 +36,11 @@
                         },
                         {
                             "name": "Fitnessteak vom Grill, dazu Zitrone oder Kräuterbutter, Grilltomate und Ofenkartoffel mit Sauerrahmdip oder bunter Salatauswahl",
-                            "price": 8.2,
+                            "price": {
+                                "base_price": 8.2,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -46,7 +54,11 @@
                         },
                         {
                             "name": "\"Chana Dal\" Kichererbsen, Kartoffeln, Kokosmilch, Curryblätter und Reis",
-                            "price": 4.9,
+                            "price": {
+                                "base_price": 4.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -60,7 +72,11 @@
                         },
                         {
                             "name": "Calamari alla Romana, gebackene Tintenfischringe mit Knoblauchmayonnaise und gemischtem Blattsalat mit Tomate und Gurke",
-                            "price": 6.2,
+                            "price": {
+                                "base_price": 6.2,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -79,7 +95,11 @@
                     "dishes": [
                         {
                             "name": "Grenaillekartoffeln mit Apfel-Möhren-Quark, auf Wunsch mit gerösteten Sonnenblumenkernen",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -93,7 +113,11 @@
                         },
                         {
                             "name": "Böfflamott, gebeizter Rinderschmorbraten mit Rotwein, dazu Frühlingsgemüse und Semmelknödel",
-                            "price": 6.8,
+                            "price": {
+                                "base_price": 6.8,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -107,7 +131,11 @@
                         },
                         {
                             "name": "Fussili mit Lauch, Ricotta, Meerrettich und frischem Basilikum",
-                            "price": 4.5,
+                            "price": {
+                                "base_price": 4.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -121,7 +149,11 @@
                         },
                         {
                             "name": "Aus dem Wok Putengeschnetzeltes mit Mangold, Möhren, Frühlings- zwiebeln und Basmatireis",
-                            "price": 6.9,
+                            "price": {
+                                "base_price": 6.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -140,7 +172,11 @@
                     "dishes": [
                         {
                             "name": "Curryreispfanne mit Gemüse, Ananas, Kreuzkümmel, Koriander und Chili-Dip",
-                            "price": 3.5,
+                            "price": {
+                                "base_price": 3.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -154,7 +190,11 @@
                         },
                         {
                             "name": "Zitronen Seelachs auf Paprika-Champignon Gemüse, Petersilien- Kartoffeln und leichter Buttersauce",
-                            "price": 5.9,
+                            "price": {
+                                "base_price": 5.9,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -168,7 +208,11 @@
                         },
                         {
                             "name": "Paprikarahmgeschnetzeltes mit Hörnchennudeln",
-                            "price": 5.2,
+                            "price": {
+                                "base_price": 5.2,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -182,7 +226,11 @@
                         },
                         {
                             "name": "\"Pasta Arora\" italienische Nudeln mit Tomatensahne, Mozzarella und Basilikum",
-                            "price": 4.5,
+                            "price": {
+                                "base_price": 4.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",

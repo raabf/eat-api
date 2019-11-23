@@ -7,13 +7,21 @@
             "dishes": [
                 {
                     "name": "Kartoffelgulasch mit Paprika",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [],
                     "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Hackfleischbällchen mit Champignonrahmsauce",
-                    "price": 1.9,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -27,7 +35,11 @@
                 },
                 {
                     "name": "Seelachsfilet (MSC) im Sesammantel mit Remouladensauce",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "1",
                         "2",
@@ -45,7 +57,11 @@
                 },
                 {
                     "name": "Gebackene Calamari-Ringe mit Remouladensauce",
-                    "price": 2.6,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "1",
                         "2",
@@ -67,7 +83,11 @@
             "dishes": [
                 {
                     "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Kn"
                     ],
@@ -75,7 +95,11 @@
                 },
                 {
                     "name": "Schweinebraten mit Biersauce",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "99",
                         "Gl",
@@ -89,7 +113,11 @@
                 },
                 {
                     "name": "Massamann Curry (mit Hähnchen)",
-                    "price": 2.6,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "En",
                         "Gl",
@@ -107,7 +135,11 @@
             "dishes": [
                 {
                     "name": "Couscous mit mediterranem Gemüse",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -117,7 +149,11 @@
                 },
                 {
                     "name": "Hackbraten mit Rahmsauce",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -134,7 +170,11 @@
                 },
                 {
                     "name": "Gefüllte Paprikaschote mit Tomatensauce",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "1",
                         "Gl",
@@ -152,7 +192,11 @@
             "dishes": [
                 {
                     "name": "Bulgur mit Zucchini und Tomaten",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -162,7 +206,11 @@
                 },
                 {
                     "name": "Putenschnitzel auf Asia-Pfannengemüse",
-                    "price": 2.6,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "2",
                         "Gl",
@@ -174,7 +222,11 @@
                 },
                 {
                     "name": "Bio-Spaghetti mit Bio-Spinat-Sahnesauce",
-                    "price": 1.9,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -190,13 +242,21 @@
             "dishes": [
                 {
                     "name": "Buntes Pfannengemüse",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [],
                     "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Rohrnudeln mit Vanillesauce",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -206,7 +266,11 @@
                 },
                 {
                     "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -217,7 +281,11 @@
                 },
                 {
                     "name": "Seelachs (MSC) Rhodos, mit Tomaten und Oliven",
-                    "price": 3.0,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "3",
                         "Fi",

@@ -10,7 +10,11 @@
                     "dishes": [
                         {
                             "name": "Tellerfleisch mit Bouillonkartoffeln und Sahnemeerrettich Kaiserschmarrn mit Zwetschenröster",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Mi",
                                 "Sl"
@@ -19,7 +23,11 @@
                         },
                         {
                             "name": "Kurkumareis mit Asia Wokgemüse",
-                            "price": 3.6,
+                            "price": {
+                                "base_price": 3.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Sl"
                             ],
@@ -27,7 +35,11 @@
                         },
                         {
                             "name": "Kartoffel „Cordon Bleu“ mit Frischkäse gefüllt dazu Blattsalate",
-                            "price": 4.3,
+                            "price": {
+                                "base_price": 4.3,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Mi",
@@ -37,7 +49,11 @@
                         },
                         {
                             "name": "Putenschnitzel natur mit Paprikarahmsoße dazu Ebly Gemüseweizen",
-                            "price": 5.3,
+                            "price": {
+                                "base_price": 5.3,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Mi",
                                 "Sl"
@@ -51,7 +67,11 @@
                     "dishes": [
                         {
                             "name": "Tellerfleisch mit Bouillonkartoffeln und Sahnemeerrettich Kaiserschmarrn mit Zwetschenröster",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Mi",
                                 "Sl"
@@ -60,7 +80,11 @@
                         },
                         {
                             "name": "Süßkartoffel Gemüsepfanne",
-                            "price": 3.6,
+                            "price": {
+                                "base_price": 3.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Sl"
                             ],
@@ -68,7 +92,11 @@
                         },
                         {
                             "name": "Gemüse Nudelauflauf",
-                            "price": 4.3,
+                            "price": {
+                                "base_price": 4.3,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Gl",
                                 "Mi",
@@ -78,7 +106,11 @@
                         },
                         {
                             "name": "Hähnchenspieß in Kokos Currysoße dazu Früchtereis",
-                            "price": 5.3,
+                            "price": {
+                                "base_price": 5.3,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Mi",
                                 "Sl"
@@ -92,7 +124,11 @@
                     "dishes": [
                         {
                             "name": "Tellerfleisch mit Bouillonkartoffeln und Sahnemeerrettich Kaiserschmarrn mit Zwetschenröster",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Mi",
                                 "Sl"
@@ -101,7 +137,11 @@
                         },
                         {
                             "name": "Antipasti Rosmarinkartoffeln",
-                            "price": 3.6,
+                            "price": {
+                                "base_price": 3.6,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Sl"
                             ],
@@ -109,7 +149,11 @@
                         },
                         {
                             "name": "Schlemmerfilet auf Antipasti Rosmarinkartoffeln",
-                            "price": 4.5,
+                            "price": {
+                                "base_price": 4.5,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Sl"
                             ],
@@ -117,7 +161,11 @@
                         },
                         {
                             "name": "Kaiserschmarrn mit Zwetschenröster",
-                            "price": 3.0,
+                            "price": {
+                                "base_price": 3.0,
+                                "price_per_unit": null,
+                                "unit": null
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",

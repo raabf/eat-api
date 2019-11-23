@@ -7,7 +7,11 @@
             "dishes": [
                 {
                     "name": "Indisches Linsencurry",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Kn",
                         "Sf",
@@ -17,7 +21,11 @@
                 },
                 {
                     "name": "Blätterteigtasche gefüllt mit Spinat und Hirtenkäse",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -30,7 +38,11 @@
                 },
                 {
                     "name": "Pikante Chickenwings mit Barbecuesauce",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "10",
                         "11",
@@ -47,7 +59,11 @@
             "dishes": [
                 {
                     "name": "Orientalischer Bulgur mit Kichererbsen und Spinat",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -57,7 +73,11 @@
                 },
                 {
                     "name": "Fränkische Bratwurst mit Sauerkraut",
-                    "price": 1.55,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "8",
                         "R",
@@ -67,7 +87,11 @@
                 },
                 {
                     "name": "Gekochte Rinderbrust (GQB) mit Meerrettichsauce",
-                    "price": 3.0,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "3",
                         "Gl",
@@ -85,7 +109,11 @@
             "dishes": [
                 {
                     "name": "Reis mit asiatischem Gemüse und Koriander",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "2",
                         "Kn",
@@ -96,7 +124,11 @@
                 },
                 {
                     "name": "Putengulasch",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -107,7 +139,11 @@
                 },
                 {
                     "name": "Bio-Penne mit Bio-Soja-Bolognese-Sauce",
-                    "price": 1.9,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -124,7 +160,11 @@
             "dishes": [
                 {
                     "name": "Grüner Erbseneintopf",
-                    "price": 1.0,
+                    "price": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Sl"
                     ],
@@ -132,7 +172,11 @@
                 },
                 {
                     "name": "Dampfnudel mit Vanillesauce",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -143,7 +187,11 @@
                 },
                 {
                     "name": "Seelachsfilet (MSC) auf Blattspinat, Blattspinat",
-                    "price": 2.4,
+                    "price": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
                     "ingredients": [
                         "Fi",
                         "Gl",
