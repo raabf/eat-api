@@ -14,7 +14,7 @@ import requests
 from lxml import html
 
 import util
-from entities import Dish, Menu, Ingredients, Price
+from entities import Dish, Menu, Ingredients, Price, Prices
 
 
 class MenuParser(ABC):
@@ -43,74 +43,109 @@ class MenuParser(ABC):
 
 
 class StudentenwerkMenuParser(MenuParser):
-    # Probably deprecated old prices
-    prices: Dict[str, Union[float, str]] = {
-        "Tagesgericht 1": 1, "Tagesgericht 2": 1.55, "Tagesgericht 3": 1.9, "Tagesgericht 4": 2.4,
-        "Aktionsessen 1": 1.55, "Aktionsessen 2": 1.9, "Aktionsessen 3": 2.4, "Aktionsessen 4": 2.6,
-        "Aktionsessen 5": 2.8, "Aktionsessen 6": 3.0, "Aktionsessen 7": 3.2, "Aktionsessen 8": 3.5, "Aktionsessen 9": 4,
-        "Aktionsessen 10": 4.5, "Biogericht 1": 1.55, "Biogericht 2": 1.9, "Biogericht 3": 2.4, "Biogericht 4": 2.6,
-        "Biogericht 5": 2.8, "Biogericht 6": 3.0, "Biogericht 7": 3.2, "Biogericht 8": 3.5, "Biogericht 9": 4,
-        "Biogericht 10": 4.5, "Self-Service": "0.68€ / 100g", "Self-Service Arcisstraße": "0.68€ / 100g",
-        "Self-Service Grüne Mensa": "0.33€ / 100g", "Baustellenteller": "Baustellenteller (> 2.40€)",
-        "Fast Lane": "Fast Lane (> 3.50€)", "Länder-Mensa": "0.75€ / 100g", "Mensa Spezial Pasta": "0.60€ / 100g",
-        "Mensa Spezial": "individual",  # 0.85€ / 100g (one-course dishes have individual prices)
-    }
-
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
 
     # Base price for sausage, meat, fish
     prices_self_service_base: Tuple[float, float, float] = (0.55, 1.00, 1.50)
     # Meet and vegetarian base prices for Students, Staff, Guests
-    prices_self_service_classic: Tuple[Price, Price, Price] = (Price(0, 0.75, "100g"), Price(0, 0.90, "100g"), Price(0, 1.05, "100g"))
+    prices_self_service_classic: Prices = Prices(Price(0, 0.75, "100g"), Price(0, 0.90, "100g"), Price(0, 1.05, "100g"))
     # Vegan, stew and soup prices for students, staff, guests
-    prices_self_service_vegan: Tuple[Price, Price, Price] = (Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g"))
+    prices_self_service_vegan: Prices = Prices(Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g"))
 
     # Students, Staff, Guests
-    prices_mesa_leopoldstr: Dict[str, Tuple[Price, Price, Price]] = {
-        "Grüne Mensa": (Price("N/A"), Price("N/A"), Price("N/A")),
-        "Vegan": (Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g")),
-        "Vegetarisch": (Price(0, 0.75, "100g"), Price(0, 0.85, "100g"), Price(0, 0.95, "100g")),
-        "Suppe": (Price(0.55), Price(0.65), Price(0.80)),
-        "Länder-Mensa": (Price("N/A"), Price("N/A"), Price("N/A")),
-        "Länder Menü": (Price(0, 0.75, "100g"), Price(0, 0.85, "100g"), Price(0, 0.95, "100g")),
-        "Länder-Suppe": (Price(0.55), Price(0.65), Price(0.80)),
-        "Mensa Klassiker": (Price("N/A"), Price("N/A"), Price("N/A")),
-        "Klassik Menü": (Price(0, 0.85, "100g"), Price(0, 0.90, "100g"), Price(0, 1, "100g")),
-        "Klassik Tellergericht": (Price("N/A"), Price("N/A"), Price("N/A")),
-        "Klassik Suppe": (Price(0.55), Price(0.65), Price(0.80)),
-        "Mensa Spezial Pasta": (Price("N/A"), Price("N/A"), Price("N/A")),
-        "Pasta-Menü": (Price(0, 0.60, "100g"), Price(0, 0.70, "100g"), Price(0, 0.80, "100g")),
-        "Beilagen": (Price(0.60), Price(0.77), Price(0.92)),
-        "Aktionssalat 3": (Price(0.80), Price(1.14), Price(1.34)),
-        "Dessert": (Price(0.60), Price(0.77), Price(0.92)),
-        "Aktionsdessert 3": (Price(0.80), Price(1.14), Price(1.34)),
-        "Aktionsdessert 4": (Price(1), Price(1.34), Price(1.54)),
-        "Frische Säfte": (Price(1.50), Price(1.50), Price(1.50))
+    prices_mesa_leopoldstr: Dict[str, Prices] = {
+        "Grüne Mensa": Prices(),
+        "Vegan": Prices(Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g")),
+        "Vegetarisch": Prices(Price(0, 0.75, "100g"), Price(0, 0.85, "100g"), Price(0, 0.95, "100g")),
+        "Suppe": Prices(Price(0.55), Price(0.65), Price(0.80)),
+        "Länder-Mensa": Prices(),
+        "Länder Menü": Prices(Price(0, 0.75, "100g"), Price(0, 0.85, "100g"), Price(0, 0.95, "100g")),
+        "Länder-Suppe": Prices(Price(0.55), Price(0.65), Price(0.80)),
+        "Mensa Klassiker": Prices(),
+        "Klassik Menü": Prices(Price(0, 0.85, "100g"), Price(0, 0.90, "100g"), Price(0, 1, "100g")),
+        "Klassik Tellergericht": Prices(),
+        "Klassik Suppe": Prices(Price(0.55), Price(0.65), Price(0.80)),
+        "Mensa Spezial Pasta": Prices(),
+        "Pasta-Menü": Prices(Price(0, 0.60, "100g"), Price(0, 0.70, "100g"), Price(0, 0.80, "100g")),
+        "Beilage": Prices(Price(0.60), Price(0.77), Price(0.92)),
+        "Aktionssalat 3": Prices(Price(0.80), Price(1.14), Price(1.34)),
+        "Dessert": Prices(Price(0.60), Price(0.77), Price(0.92)),
+        "Aktionsdessert 3": Prices(Price(0.80), Price(1.14), Price(1.34)),
+        "Aktionsdessert 4": Prices(Price(1), Price(1.34), Price(1.54)),
+        "Frische Säfte": Prices(Price(1.50), Price(1.50), Price(1.50))
+    }
+
+    # Students, Staff, Guests
+    # Looks like those are the fallback prices
+    prices_mesa_weihenstephan_mensa_lothstrasse: Dict[str, Tuple[Price, Price, Price]] = {
+        "Tagesgericht 1": Prices(Price(1.00), Price(1.90), Price(2.40)),
+        "Tagesgericht 2": Prices(Price(1.55), Price(2.25), Price(2.75)),
+        "Tagesgericht 3": Prices(Price(1.90), Price(2.60), Price(3.10)),
+        "Tagesgericht 4": Prices(Price(2.40), Price(2.95), Price(3.45)),
+        "Suppe": Prices(Price(0.55), Price(0.65), Price(0.80)),
+        "Stärkebeilagen": Prices(Price(0.60), Price(0.77), Price(0.92)),
+        "Beilage": Prices(Price(0.60), Price(0.79), Price(0.94)),
+        "Salatbuffet": Prices(Price(0, 0.85, "100g"), Price(0, 0.90, "100g"), Price(0, 0.95, "100g")),
+        "Obst": Prices(Price(0.80), Price(0.80), Price(0.80)),
+        
+        "Aktionsgericht 1": Prices(Price(1.55), Price(2.25), Price(2.75)),
+        "Aktionsgericht 2": Prices(Price(1.90), Price(2.60), Price(3.10)),
+        "Aktionsgericht 3": Prices(Price(2.40), Price(2.95), Price(3.45)),
+        "Aktionsgericht 4": Prices(Price(2.60), Price(3.30), Price(3.80)),
+        "Aktionsgericht 5": Prices(Price(2.80), Price(3.65), Price(4.15)),
+        "Aktionsgericht 6": Prices(Price(3.00), Price(4.00), Price(4.50)),
+        "Aktionsgericht 7": Prices(Price(3.20), Price(4.35), Price(4.85)),
+        "Aktionsgericht 8": Prices(Price(3.50), Price(4.70), Price(5.20)),
+        "Aktionsgericht 9": Prices(Price(4.00), Price(5.05), Price(5.55)),
+        "Aktionsgericht 10": Prices(Price(4.50), Price(5.40), Price(5.90)),
+        "Aktionsgericht 11": Prices(Price(5.50), Price(6.50), Price(7.20)),
+        "Biogericht 1": Prices(Price(1.55), Price(2.25), Price(2.75)),
+        "Biogericht 2": Prices(Price(1.90), Price(2.60), Price(3.10)),
+        "Biogericht 3": Prices(Price(2.40), Price(2.95), Price(3.45)),
+        "Biogericht 4": Prices(Price(2.60), Price(3.30), Price(3.80)),
+        "Biogericht 5": Prices(Price(2.80), Price(3.65), Price(4.15)),
+        "Biogericht 6": Prices(Price(3.00), Price(4.00), Price(4.50)),
+        "Biogericht 7": Prices(Price(3.20), Price(4.35), Price(4.85)),
+        "Biogericht 8": Prices(Price(3.50), Price(4.70), Price(5.20)),
+        "Biogericht 9": Prices(Price(4.00), Price(5.05), Price(5.55)),
+        "Biogericht 10": Prices(Price(4.50), Price(5.40), Price(5.90)),
+        "Biogericht 11": Prices(Price(5.50), Price(6.50), Price(7.20)),
+
+        "Biobeilage 1": Prices(Price(0.60), Price(0.79), Price(0.99)),
+        "Biobeilage 2": Prices(Price(0.75), Price(0.94), Price(1.14)),
+        "Biobeilage 3": Prices(Price(0.85), Price(1.14), Price(1.34)),
+        "Biobeilage 4": Prices(Price(1.05), Price(1.34), Price(1.54)),
+        "Biobeilage 6": Prices(Price(1.40), Price(1.60), Price(1.80)),
+        "Aktionsbeilage 1": Prices(Price(0.60), Price(0.79), Price(0.99)),
+        "Aktionsbeilage 2": Prices(Price(0.75), Price(0.94), Price(1.14)),
+        "Aktionsbeilage 3": Prices(Price(0.85), Price(1.14), Price(1.34)),
+        "Aktionsbeilage 4": Prices(Price(1.05), Price(1.34), Price(1.54)),
+        "Aktionsbeilage 6": Prices(Price(1.40), Price(1.60), Price(1.80)),
     }
 
     @staticmethod
     def __getPrice(location: str, dish: Tuple[str, str, str, str, str]):
         if "Self-Service" in dish[0] or location == "mensa-garching":
             if dish[4] == "0": # Meat
-                price: Price = StudentenwerkMenuParser.prices_self_service_classic[0]
+                prices: Prices = StudentenwerkMenuParser.prices_self_service_classic
                 # Add a base price to the dish
                 if "Fi" in dish[2]: # Fish
-                    price.base_price = StudentenwerkMenuParser.prices_self_service_base[2]
+                    prices.setBasePrice(StudentenwerkMenuParser.prices_self_service_base[2])
                 else: # Sausage and meat. TODO: Find a way to distinguish between sausage and meat
-                    price.base_price = StudentenwerkMenuParser.prices_self_service_base[1]
-                return price
+                    prices.setBasePrice(StudentenwerkMenuParser.prices_self_service_base[1])
+                return prices
             elif dish[4] == "1": # Vegetarian
-                return StudentenwerkMenuParser.prices_self_service_classic[0]
+                return StudentenwerkMenuParser.prices_self_service_classic
             elif dish[4] == "2":  # Vegan
-                return StudentenwerkMenuParser.prices_self_service_vegan[0]
+                return StudentenwerkMenuParser.prices_self_service_vegan
             else:
                 pass
 
         if location == "mensa-leopoldstr":
-            return StudentenwerkMenuParser.prices_mesa_leopoldstr.get(dish[0], Price("N/A"))
+            return StudentenwerkMenuParser.prices_mesa_leopoldstr.get(dish[0], Prices())
         
         # Fall back to the old price
-        return Price(StudentenwerkMenuParser.prices.get(dish[0], "N/A"))
+        return StudentenwerkMenuParser.prices_mesa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
 
     # Some of the locations do not use the general Studentenwerk system and do not have a location id.
     # It differs how they publish their menus — probably everyone needs an own parser.
@@ -228,7 +263,7 @@ class StudentenwerkMenuParser(MenuParser):
                 # some dishes are multi-row. That means that for the same type the dish is written in multiple rows.
                 # From the second row on the type is then just empty. In that case, we just use the price and
                 # ingredients of the previous dish.
-                dishes.append(Dish(name, Price(dishes[-1].price), dishes[-1].ingredients, dishes[-1].dish_type))
+                dishes.append(Dish(name, dishes[-1].prices, dishes[-1].ingredients, dishes[-1].dish_type))
             else:
                 dish_ingredients: Ingredients = Ingredients(location)
                 # parse ingredients
@@ -367,7 +402,7 @@ class FMIBistroMenuParser(MenuParser):
             # get dish prices
             prices = re.findall(self.price_regex, ' '.join(dish_names))
             # convert prices to float
-            prices = [Price(float(price.replace("€", "").replace(",", ".").strip())) for price in prices]
+            prices = [Prices(Price(float(price.replace("€", "").replace(",", ".").strip()))) for price in prices]
             # remove price and commas from dish names
             dish_names = [re.sub(self.price_regex, "", dish).replace(",", "").strip() for dish in dish_names]
             # create list of Dish objects; only take first 3/4 as the following dishes are corrupt and not necessary
@@ -543,7 +578,7 @@ class IPPBistroMenuParser(MenuParser):
             counter = 0
             dishes = []
             for (dish_name, price) in dish_names_price:
-                dishes.append(Dish(dish_name.strip(), Price(price.replace(',', '.').strip()), ingredients.ingredient_set, dish_types[counter]))
+                dishes.append(Dish(dish_name.strip(), Prices(Price(price.replace(',', '.').strip())), ingredients.ingredient_set, dish_types[counter]))
                 counter += 1
             date = self.get_date(year, week_number, self.weekday_positions[key])
             # create new Menu object and add it to dict
@@ -575,10 +610,10 @@ class MedizinerMensaMenuParser(MenuParser):
         dish_str = dish_str.replace(" , ", ", ")
 
         # price
-        dish_price = Price("N/A")
+        dish_price = Prices()
         for x in re.findall(self.price_regex, dish_str):
             if len(x) > 0:
-                dish_price = Price(float(x[0].replace("€", "").replace(",", ".").strip()))
+                dish_price = Prices(Price(float(x[0].replace("€", "").replace(",", ".").strip())))
         dish_str = re.sub(self.price_regex, "", dish_str)
 
         return Dish(dish_str, dish_price, dish_ingredients.ingredient_set, "Tagesgericht")

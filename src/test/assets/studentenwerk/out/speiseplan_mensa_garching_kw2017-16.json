@@ -7,10 +7,22 @@
             "dishes": [
                 {
                     "name": "Indisches Linsencurry",
-                    "price": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.33,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.55,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.66,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "Kn",
@@ -21,10 +33,22 @@
                 },
                 {
                     "name": "Blätterteigtasche gefüllt mit Spinat und Hirtenkäse",
-                    "price": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "Ei",
@@ -38,10 +62,22 @@
                 },
                 {
                     "name": "Pikante Chickenwings mit Barbecuesauce",
-                    "price": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "10",
@@ -59,10 +95,22 @@
             "dishes": [
                 {
                     "name": "Orientalischer Bulgur mit Kichererbsen und Spinat",
-                    "price": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.33,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.55,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.66,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "Gl",
@@ -73,10 +121,22 @@
                 },
                 {
                     "name": "Fränkische Bratwurst mit Sauerkraut",
-                    "price": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "8",
@@ -87,10 +147,22 @@
                 },
                 {
                     "name": "Gekochte Rinderbrust (GQB) mit Meerrettichsauce",
-                    "price": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "3",
@@ -109,10 +181,22 @@
             "dishes": [
                 {
                     "name": "Reis mit asiatischem Gemüse und Koriander",
-                    "price": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.33,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.55,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.66,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "2",
@@ -124,10 +208,22 @@
                 },
                 {
                     "name": "Putengulasch",
-                    "price": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "Gl",
@@ -139,10 +235,22 @@
                 },
                 {
                     "name": "Bio-Penne mit Bio-Soja-Bolognese-Sauce",
-                    "price": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "Gl",
@@ -160,10 +268,22 @@
             "dishes": [
                 {
                     "name": "Grüner Erbseneintopf",
-                    "price": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.33,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.55,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.66,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "Sl"
@@ -172,10 +292,22 @@
                 },
                 {
                     "name": "Dampfnudel mit Vanillesauce",
-                    "price": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "Ei",
@@ -187,10 +319,22 @@
                 },
                 {
                     "name": "Seelachsfilet (MSC) auf Blattspinat, Blattspinat",
-                    "price": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
                     },
                     "ingredients": [
                         "Fi",

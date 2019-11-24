@@ -47,6 +47,59 @@ class Price:
         return (hash(self.base_price) << 1) ^ hash(self.price_per_unit) ^ hash(self.unit)
 
 
+class Prices:
+    students: Price
+    staff: Price
+    guests: Price
+
+    def __init__(self, students: Optional[Price] = None, staff: Optional[Price] = None, guests: Optional[Price] = None):
+        if students is None:
+            self.students = Price("N/A")
+        else:
+            self.students = students
+        # fall back to the students price if there is only one price available
+        if staff is None:
+            self.staff = self.students
+        else:
+            self.staff = staff
+        if guests is None:
+            self.guests = self.students
+        else:
+            self.guests = guests
+
+    def setBasePrice(self, base_price: float):
+        self.students.base_price = base_price
+        self.staff.base_price = base_price
+        self.guests.base_price = base_price
+
+    def __eq__(self, other: Any):
+        if isinstance(other, self.__class__):
+            return (self.students == other.students
+                    and self.staff == other.staff
+                    and self.guests == other.guests)
+        return False
+
+    def __repr__(self):
+        return "students: {}, staff: {}, guests: {}".format(self.students, self.staff, self.guests)
+        if self.price_per_unit and self.unit:
+            if isinstance(self.base_price, float):
+                return "{:.2f}€ + {:.2f} {}".format(self.base_price, self.price_per_unit, self.unit)
+            else:
+                return "{} + {} {}".format(self.base_price, self.price_per_unit, self.unit)
+        else:
+            if isinstance(self.base_price, float):
+                return "{:.2f}€".format(self.base_price)
+            else:
+                return "{}".format(self.base_price)
+
+    def to_json_obj(self):
+        return {"students": self.students.to_json_obj(), "staff": self.staff.to_json_obj(), "guests": self.guests.to_json_obj()}
+    
+    def __hash__(self):
+        # http://stackoverflow.com/questions/4005318/how-to-implement-a-good-hash-function-in-python
+        return hash(self.students) ^ hash(self.staff) ^ hash(self.guests)
+
+
 class Ingredients:
 
     location: str
@@ -219,13 +272,13 @@ class Ingredients:
 
 class Dish:
     name: str
-    price: Price
+    prices: Prices
     ingredients: Ingredients
     dish_type: str
 
-    def __init__(self, name: str, price: Price, ingredients: Ingredients, dish_type: str):
+    def __init__(self, name: str, prices: Prices, ingredients: Ingredients, dish_type: str):
         self.name = name
-        self.price = price
+        self.prices = prices
         self.ingredients = ingredients
         self.dish_type = dish_type
 
@@ -235,18 +288,18 @@ class Dish:
     def __eq__(self, other: Any):
         if isinstance(other, self.__class__):
             return (self.name == other.name
-                    and self.price == other.price
+                    and self.prices == other.prices
                     and self.ingredients == other.ingredients
                     and self.dish_type == other.dish_type)
         return False
 
     def to_json_obj(self):
-        return {"name": self.name, "price": self.price.to_json_obj(),
+        return {"name": self.name, "prices": self.prices.to_json_obj(),
              "ingredients": sorted(self.ingredients), "dish_type": self.dish_type}
 
     def __hash__(self):
         # http://stackoverflow.com/questions/4005318/how-to-implement-a-good-hash-function-in-python
-        return (hash(self.name) << 1) ^ hash(self.price) ^ hash(frozenset(self.ingredients)) ^ hash(self.dish_type)
+        return (hash(self.name) << 1) ^ hash(self.prices) ^ hash(frozenset(self.ingredients)) ^ hash(self.dish_type)
 
 
 class Menu:

@@ -25,8 +25,8 @@ def weeksToCanteenFeed(weeks):
     return canteen
 
 def addDishToCanteen(dish, date, canteen):
-    if type(dish.price.base_price) is float:
-        prices = {'other': dish.price.base_price}
+    if type(dish.prices.students.base_price) is float:
+        prices = {'other': dish.prices.students.base_price}
     else:
         prices = {}
     canteen.addMeal(date, 'Speiseplan', dish.name, prices=prices)

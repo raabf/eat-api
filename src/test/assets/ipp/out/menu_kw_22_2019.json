@@ -10,10 +10,22 @@
                     "dishes": [
                         {
                             "name": "Kohlrabieintopf mit Kartoffeln (mit Wiener 4,50 €)",
-                            "price": {
-                                "base_price": 3.5,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -28,10 +40,22 @@
                         },
                         {
                             "name": "Pfefferrahmgeschnetzeltes von der Pute mit Reis",
-                            "price": {
-                                "base_price": 5.9,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 5.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 5.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 5.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -46,10 +70,22 @@
                         },
                         {
                             "name": "Überraschungsmenü",
-                            "price": {
-                                "base_price": "?€",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "?€",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "?€",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "?€",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -64,10 +100,22 @@
                         },
                         {
                             "name": "Luganer Schweinesteak mit Senf, Schinken, Käse und Tomatenragout gratiniert, dazu Pommes frites",
-                            "price": {
-                                "base_price": 6.9,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -87,10 +135,22 @@
                     "dishes": [
                         {
                             "name": "Überraschungsmenü",
-                            "price": {
-                                "base_price": 3.7,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.7,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.7,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.7,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -105,10 +165,22 @@
                         },
                         {
                             "name": "Gnocchi Aurora, dazu Pesto und Grana",
-                            "price": {
-                                "base_price": 4.8,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -123,10 +195,22 @@
                         },
                         {
                             "name": "Wokgericht Gemüse-Couscous mit mariniertem Harissa-Honig- Hühnchen (leicht scharf)",
-                            "price": {
-                                "base_price": 6.9,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -141,10 +225,22 @@
                         },
                         {
                             "name": "\"Kentucky-fried-Schnitzel\", Schweineschnitzel in Paprika- Oregano-Panade, dazu Pommes frites",
-                            "price": {
-                                "base_price": 6.2,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -164,10 +260,22 @@
                     "dishes": [
                         {
                             "name": "Puddingmilchreis mit Himbeersauce",
-                            "price": {
-                                "base_price": 3.5,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -182,10 +290,22 @@
                         },
                         {
                             "name": "Putenschnitzel in Zitronen- Kapernsauce mit Petersilienkartoffeln",
-                            "price": {
-                                "base_price": 6.9,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -200,10 +320,22 @@
                         },
                         {
                             "name": "Penne \"Diabolo\" mit Cabanossi, Peperoni,Paprika, Zucchini, Chilipulver und Mais, dazu Grana",
-                            "price": {
-                                "base_price": 4.9,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -218,10 +350,22 @@
                         },
                         {
                             "name": "\"Battala Curry\", süße Kartoffeln, Erbsen, Kokosmilch, Senfkörner und Reis",
-                            "price": {
-                                "base_price": 4.9,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",

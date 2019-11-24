@@ -10,10 +10,22 @@
                     "dishes": [
                         {
                             "name": "Blumenkohlcremesuppe",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -23,10 +35,22 @@
                         },
                         {
                             "name": "Pfannengyros mit Tzaziki",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Mi",
@@ -36,10 +60,22 @@
                         },
                         {
                             "name": "Spaghetti \" Gemüsebolognese \"",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -49,10 +85,22 @@
                         },
                         {
                             "name": "Thai-Curry aus Blumenkohl und Kartoffeln mit Gemüsreis und Salat",
-                            "price": {
-                                "base_price": 2.2,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -69,10 +117,22 @@
                     "dishes": [
                         {
                             "name": "Gelbe Erbsensuppe",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -82,10 +142,22 @@
                         },
                         {
                             "name": "Grüner Bohneneintopf mit Rindfleisch",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "R",
@@ -95,10 +167,22 @@
                         },
                         {
                             "name": "Veggi-Gulasch",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -108,10 +192,22 @@
                         },
                         {
                             "name": "Rotbarschfischfilet in Dillsoße mit Kürbisgemüse und Wacholderreis",
-                            "price": {
-                                "base_price": 3.65,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.65,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.65,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.65,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Fi",
@@ -127,10 +223,22 @@
                     "dishes": [
                         {
                             "name": "Rinderbrühe \" Gärtnerin \"",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "R",
@@ -140,10 +248,22 @@
                         },
                         {
                             "name": "Schweinegulasch",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -153,10 +273,22 @@
                         },
                         {
                             "name": "Gemüsekuchen mit Mozzarella überbacken",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Ei",
@@ -168,10 +300,22 @@
                         },
                         {
                             "name": "Schinkennudeln mit Tomatensoße, dazu gemischter Salat",
-                            "price": {
-                                "base_price": 2.1,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "2",
@@ -192,10 +336,22 @@
                     "dishes": [
                         {
                             "name": "Kürbiscremesuppe",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -205,10 +361,22 @@
                         },
                         {
                             "name": "Rinderhackbraten",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Ei",
@@ -222,10 +390,22 @@
                         },
                         {
                             "name": "Dinkel-Kräuterbratling",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Ei",
@@ -236,10 +416,22 @@
                         },
                         {
                             "name": "Pikantes Risotto mit buntem Gemüse und Tomatensalat mit Basilikum",
-                            "price": {
-                                "base_price": 2.15,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.15,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.15,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.15,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "1",
@@ -256,10 +448,22 @@
                     "dishes": [
                         {
                             "name": "Minestrone",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Ei",
@@ -270,10 +474,22 @@
                         },
                         {
                             "name": "Gebratene Hähnchenbrust",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "G"
@@ -282,10 +498,22 @@
                         },
                         {
                             "name": "Scheiterhaufen mit Apfel-Vanille-Ragout",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "3",
@@ -299,10 +527,22 @@
                         },
                         {
                             "name": "Paniertes Schnitzel vom Schwein und Pute mit Kartoffelmayosalat und Zitronenecke",
-                            "price": {
-                                "base_price": 3.6,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "3",
@@ -322,10 +562,22 @@
                     "dishes": [
                         {
                             "name": "Tomatencremesuppe",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -335,10 +587,22 @@
                         },
                         {
                             "name": "Pichelsteiner Gemüseeintopf mit Rindfleisch",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "R",
@@ -348,10 +612,22 @@
                         },
                         {
                             "name": "Ofenkartoffel mit herzhaftem Gemüseragout",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -367,10 +643,22 @@
                     "dishes": [
                         {
                             "name": "Grießnockerlsuppe",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Ei",
@@ -380,10 +668,22 @@
                         },
                         {
                             "name": "Glasierter Putenbraten in Kräuterrahmsoße",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "G",
@@ -394,10 +694,22 @@
                         },
                         {
                             "name": "Eieromelett",
-                            "price": {
-                                "base_price": "N/A",
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Ei",

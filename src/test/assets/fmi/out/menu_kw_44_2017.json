@@ -10,10 +10,22 @@
                     "dishes": [
                         {
                             "name": "Tellerfleisch mit Bouillonkartoffeln und Sahnemeerrettich Kaiserschmarrn mit Zwetschenröster",
-                            "price": {
-                                "base_price": 3.0,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Mi",
@@ -23,10 +35,22 @@
                         },
                         {
                             "name": "Kurkumareis mit Asia Wokgemüse",
-                            "price": {
-                                "base_price": 3.6,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Sl"
@@ -35,10 +59,22 @@
                         },
                         {
                             "name": "Kartoffel „Cordon Bleu“ mit Frischkäse gefüllt dazu Blattsalate",
-                            "price": {
-                                "base_price": 4.3,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Ei",
@@ -49,10 +85,22 @@
                         },
                         {
                             "name": "Putenschnitzel natur mit Paprikarahmsoße dazu Ebly Gemüseweizen",
-                            "price": {
-                                "base_price": 5.3,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 5.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 5.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 5.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Mi",
@@ -67,10 +115,22 @@
                     "dishes": [
                         {
                             "name": "Tellerfleisch mit Bouillonkartoffeln und Sahnemeerrettich Kaiserschmarrn mit Zwetschenröster",
-                            "price": {
-                                "base_price": 3.0,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Mi",
@@ -80,10 +140,22 @@
                         },
                         {
                             "name": "Süßkartoffel Gemüsepfanne",
-                            "price": {
-                                "base_price": 3.6,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Sl"
@@ -92,10 +164,22 @@
                         },
                         {
                             "name": "Gemüse Nudelauflauf",
-                            "price": {
-                                "base_price": 4.3,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Gl",
@@ -106,10 +190,22 @@
                         },
                         {
                             "name": "Hähnchenspieß in Kokos Currysoße dazu Früchtereis",
-                            "price": {
-                                "base_price": 5.3,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 5.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 5.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 5.3,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Mi",
@@ -124,10 +220,22 @@
                     "dishes": [
                         {
                             "name": "Tellerfleisch mit Bouillonkartoffeln und Sahnemeerrettich Kaiserschmarrn mit Zwetschenröster",
-                            "price": {
-                                "base_price": 3.0,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Mi",
@@ -137,10 +245,22 @@
                         },
                         {
                             "name": "Antipasti Rosmarinkartoffeln",
-                            "price": {
-                                "base_price": 3.6,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Sl"
@@ -149,10 +269,22 @@
                         },
                         {
                             "name": "Schlemmerfilet auf Antipasti Rosmarinkartoffeln",
-                            "price": {
-                                "base_price": 4.5,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Sl"
@@ -161,10 +293,22 @@
                         },
                         {
                             "name": "Kaiserschmarrn mit Zwetschenröster",
-                            "price": {
-                                "base_price": 3.0,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "Ei",

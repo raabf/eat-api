@@ -171,7 +171,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
     # just for generating reference json files
     def test_genFile(self):
         # parse the menu
-        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_new, "mensa-garching")
+        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
         weeks = Week.to_weeks(menus)
         main.jsonify(weeks, "/tmp/eat-api_test_output", "mensa-garching", True)
     """
@@ -386,9 +386,11 @@ class MedizinerMensaParserTest(unittest.TestCase):
                 with open("src/test/assets/mediziner-mensa/out/menu_kw_47_2018.json", "r") as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
+    #"""
     # just for generating reference json files
     def test_genFile(self):
         # parse the menu
         menus = self.mediziner_mensa_parser.get_menus(self.menu_kw_47_2018_txt, self.menu_kw_47_2018_year, self.menu_kw_47_2018_week_number)
         weeks = Week.to_weeks(menus)
         main.jsonify(weeks, "/tmp/eat-api_test_output", "mediziner-mensa", True)
+    #"""

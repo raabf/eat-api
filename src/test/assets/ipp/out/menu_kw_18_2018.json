@@ -18,10 +18,22 @@
                     "dishes": [
                         {
                             "name": "Kirschmichel mit Vanillesauce",
-                            "price": {
-                                "base_price": 3.5,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -36,10 +48,22 @@
                         },
                         {
                             "name": "Fitnessteak vom Grill, dazu Zitrone oder Kräuterbutter, Grilltomate und Ofenkartoffel mit Sauerrahmdip oder bunter Salatauswahl",
-                            "price": {
-                                "base_price": 8.2,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 8.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 8.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 8.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -54,10 +78,22 @@
                         },
                         {
                             "name": "\"Chana Dal\" Kichererbsen, Kartoffeln, Kokosmilch, Curryblätter und Reis",
-                            "price": {
-                                "base_price": 4.9,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -72,10 +108,22 @@
                         },
                         {
                             "name": "Calamari alla Romana, gebackene Tintenfischringe mit Knoblauchmayonnaise und gemischtem Blattsalat mit Tomate und Gurke",
-                            "price": {
-                                "base_price": 6.2,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -95,10 +143,22 @@
                     "dishes": [
                         {
                             "name": "Grenaillekartoffeln mit Apfel-Möhren-Quark, auf Wunsch mit gerösteten Sonnenblumenkernen",
-                            "price": {
-                                "base_price": 3.5,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -113,10 +173,22 @@
                         },
                         {
                             "name": "Böfflamott, gebeizter Rinderschmorbraten mit Rotwein, dazu Frühlingsgemüse und Semmelknödel",
-                            "price": {
-                                "base_price": 6.8,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -131,10 +203,22 @@
                         },
                         {
                             "name": "Fussili mit Lauch, Ricotta, Meerrettich und frischem Basilikum",
-                            "price": {
-                                "base_price": 4.5,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -149,10 +233,22 @@
                         },
                         {
                             "name": "Aus dem Wok Putengeschnetzeltes mit Mangold, Möhren, Frühlings- zwiebeln und Basmatireis",
-                            "price": {
-                                "base_price": 6.9,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -172,10 +268,22 @@
                     "dishes": [
                         {
                             "name": "Curryreispfanne mit Gemüse, Ananas, Kreuzkümmel, Koriander und Chili-Dip",
-                            "price": {
-                                "base_price": 3.5,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -190,10 +298,22 @@
                         },
                         {
                             "name": "Zitronen Seelachs auf Paprika-Champignon Gemüse, Petersilien- Kartoffeln und leichter Buttersauce",
-                            "price": {
-                                "base_price": 5.9,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 5.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 5.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 5.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -208,10 +328,22 @@
                         },
                         {
                             "name": "Paprikarahmgeschnetzeltes mit Hörnchennudeln",
-                            "price": {
-                                "base_price": 5.2,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 5.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 5.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 5.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
@@ -226,10 +358,22 @@
                         },
                         {
                             "name": "\"Pasta Arora\" italienische Nudeln mit Tomatensahne, Mozzarella und Basilikum",
-                            "price": {
-                                "base_price": 4.5,
-                                "price_per_unit": null,
-                                "unit": null
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
                             },
                             "ingredients": [
                                 "4",
