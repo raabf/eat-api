@@ -8,6 +8,7 @@ import menu_parser
 import util
 from openmensa import openmensa
 from entities import Week
+from typing import Any
 
 
 def get_menu_parsing_strategy(location):
@@ -69,6 +70,12 @@ def jsonify(weeks, directory, location, combine_dishes):
 def main():
     # get command line args
     args = cli.parse_cli_args()
+
+    # print canteens
+    if args.locations:
+        with open("canteens.json", 'r') as canteens:
+            print(json.dumps(json.load(canteens)))
+        return
 
     # get location from args
     location = args.location
