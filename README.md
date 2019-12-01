@@ -2,6 +2,17 @@
 
 [![Actions Status](https://github.com/TUM-Dev/eat-api/workflows/CI%2FCD/badge.svg)](https://github.com/TUM-Dev/eat-api/actions)
 
+---
+
+**The [eat-api](https://github.com/TUM-Dev/eat-api) will change its API to version 2 with support for the new [unit based pricing system](https://github.com/TUM-Dev/eat-api/issues/10).**
+
+**All changes can be found here: https://github.com/TUM-Dev/eat-api/pull/12**
+
+**When will this change happen?**  
+**01.01.2020**
+
+---
+
 Simple static API for the canteens of the [Studentenwerk München](http://www.studentenwerk-muenchen.de) as well as some other locations. By now, the following locations are supported:
 
 | Name                           | API-key                        | Address location                                                                                                       |
