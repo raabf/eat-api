@@ -10,7 +10,23 @@
                     "dishes": [
                         {
                             "name": "Kohlrabieintopf mit Kartoffeln (mit Wiener 4,50 €)",
-                            "price": 3.5,
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -24,7 +40,23 @@
                         },
                         {
                             "name": "Pfefferrahmgeschnetzeltes von der Pute mit Reis",
-                            "price": 5.9,
+                            "prices": {
+                                "students": {
+                                    "base_price": 5.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 5.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 5.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -38,7 +70,23 @@
                         },
                         {
                             "name": "Überraschungsmenü",
-                            "price": "?€",
+                            "prices": {
+                                "students": {
+                                    "base_price": "?€",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "?€",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "?€",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -52,7 +100,23 @@
                         },
                         {
                             "name": "Luganer Schweinesteak mit Senf, Schinken, Käse und Tomatenragout gratiniert, dazu Pommes frites",
-                            "price": 6.9,
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -71,7 +135,23 @@
                     "dishes": [
                         {
                             "name": "Überraschungsmenü",
-                            "price": 3.7,
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.7,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.7,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.7,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -85,7 +165,23 @@
                         },
                         {
                             "name": "Gnocchi Aurora, dazu Pesto und Grana",
-                            "price": 4.8,
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -99,7 +195,23 @@
                         },
                         {
                             "name": "Wokgericht Gemüse-Couscous mit mariniertem Harissa-Honig- Hühnchen (leicht scharf)",
-                            "price": 6.9,
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -113,7 +225,23 @@
                         },
                         {
                             "name": "\"Kentucky-fried-Schnitzel\", Schweineschnitzel in Paprika- Oregano-Panade, dazu Pommes frites",
-                            "price": 6.2,
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.2,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -132,7 +260,23 @@
                     "dishes": [
                         {
                             "name": "Puddingmilchreis mit Himbeersauce",
-                            "price": 3.5,
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.5,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -146,7 +290,23 @@
                         },
                         {
                             "name": "Putenschnitzel in Zitronen- Kapernsauce mit Petersilienkartoffeln",
-                            "price": 6.9,
+                            "prices": {
+                                "students": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 6.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -160,7 +320,23 @@
                         },
                         {
                             "name": "Penne \"Diabolo\" mit Cabanossi, Peperoni,Paprika, Zucchini, Chilipulver und Mais, dazu Grana",
-                            "price": 4.9,
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",
@@ -174,7 +350,23 @@
                         },
                         {
                             "name": "\"Battala Curry\", süße Kartoffeln, Erbsen, Kokosmilch, Senfkörner und Reis",
-                            "price": 4.9,
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "4",
                                 "Ei",

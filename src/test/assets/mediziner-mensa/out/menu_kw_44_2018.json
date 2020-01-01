@@ -10,7 +10,23 @@
                     "dishes": [
                         {
                             "name": "Spinatcremesuppe",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Gl",
                                 "Mi"
@@ -19,7 +35,23 @@
                         },
                         {
                             "name": "Gekochtes Ochsenfleisch mit Meerrettich",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "3",
                                 "5",
@@ -31,7 +63,23 @@
                         },
                         {
                             "name": "Kürbisauflauf",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -43,7 +91,23 @@
                         },
                         {
                             "name": "Asiatische Gemüse-Puten-Pfanne mit Reisnudeln",
-                            "price": 3.8,
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.8,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Fi",
                                 "G",
@@ -60,7 +124,23 @@
                     "dishes": [
                         {
                             "name": "Selleriecremesuppe",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Gl",
                                 "Mi"
@@ -69,7 +149,23 @@
                         },
                         {
                             "name": "Oldenburger Grünkohl mit Mettenden",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -84,7 +180,23 @@
                         },
                         {
                             "name": "Kaschmir Kohlrabi und Brokkoli",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Mi"
                             ],
@@ -92,7 +204,23 @@
                         },
                         {
                             "name": "Conchiglioni Nudeln mit mit mediterranem Gemüse",
-                            "price": 3.15,
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.15,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.15,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.15,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -109,13 +237,45 @@
                     "dishes": [
                         {
                             "name": "Französische Zwiebelsuppe",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [],
                             "dish_type": "Suppe"
                         },
                         {
                             "name": "Germknödel mit Vanillesoße",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "1",
                                 "9",
@@ -127,7 +287,23 @@
                         },
                         {
                             "name": "Herzhaftes Kartoffelgratin",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -140,7 +316,23 @@
                         },
                         {
                             "name": "Holzfällersteak mit Bratkartoffeln und Weißkrautsalat",
-                            "price": 3.7,
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.7,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.7,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.7,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Gl",
                                 "S",
@@ -155,7 +347,23 @@
                     "dishes": [
                         {
                             "name": "Süßkartoffelcremesuppe",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Gl",
                                 "Mi"
@@ -164,7 +372,23 @@
                         },
                         {
                             "name": "Hähnchenbrust gegrillt",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "G"
                             ],
@@ -172,7 +396,23 @@
                         },
                         {
                             "name": "In Sesamöl gebratenes Wokgemüse",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "2",
                                 "Gl",
@@ -188,7 +428,23 @@
                     "dishes": [
                         {
                             "name": "Brokkolicremesuppe",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Gl",
                                 "Mi"
@@ -197,7 +453,23 @@
                         },
                         {
                             "name": "Forelle \"Müllerin Art \"",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Fi",
                                 "Gl"
@@ -206,7 +478,23 @@
                         },
                         {
                             "name": "Quarkklößchen",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "2",
                                 "3",
@@ -220,7 +508,23 @@
                         },
                         {
                             "name": "Chili con Cous Cous mit Kürbis-Apfel-Salat",
-                            "price": 2.15,
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.15,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.15,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.15,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "3",
                                 "9",
@@ -236,7 +540,23 @@
                     "dishes": [
                         {
                             "name": "Bratspätzlesuppe",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Ei",
                                 "Gl",
@@ -248,7 +568,23 @@
                         },
                         {
                             "name": "Geflügelpflanzerl",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Ei",
                                 "G",
@@ -260,7 +596,23 @@
                         },
                         {
                             "name": "Krauttopf mit einer Vollkornsemmel",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "Gl"
                             ],
@@ -273,7 +625,23 @@
                     "dishes": [
                         {
                             "name": "Käsecremesuppe",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "1",
                                 "2",
@@ -284,7 +652,23 @@
                         },
                         {
                             "name": "Geschmortes Kalbfleisch",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "K"
                             ],
@@ -292,7 +676,23 @@
                         },
                         {
                             "name": "Vegetarische Moussaka",
-                            "price": "N/A",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
                             "ingredients": [
                                 "1",
                                 "2",

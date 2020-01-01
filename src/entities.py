@@ -2,117 +2,108 @@
 
 import json
 import re
-from typing import Dict, Optional, Sequence
+from typing import Dict, Optional, Sequence, Union, List, Any, Set
+from datetime import datetime
 
 
-class Dish:
-    def __init__(self, name, price, ingredients, dish_type):
-        self.name = name
+class Price:
+    
+    base_price: Union[float, str]
+    price_per_unit: Optional[float]
+    unit: Optional[str]
+
+    def __init__(self, base_price: Union[float, str], price_per_unit: Optional[float] = None, unit: Optional[str] = None):
         try:
-            self.price = float(price)
+            self.base_price = float(base_price)
         except ValueError:
-            self.price = price
-        self.ingredients = ingredients
-        self.dish_type = dish_type
+            self.base_price = base_price
+        self.price_per_unit = price_per_unit
+        self.unit = unit
 
     def __repr__(self):
-        if type(self.price) is not str:
-            return "%s %s %s: %.2f€" % (self.dish_type, self.name, str(sorted(self.ingredients)), self.price)
+        if self.price_per_unit and self.unit:
+            if isinstance(self.base_price, float):
+                return "{:.2f}€ + {:.2f} {}".format(self.base_price, self.price_per_unit, self.unit)
+            else:
+                return "{} + {} {}".format(self.base_price, self.price_per_unit, self.unit)
         else:
-            return "%s %s %s: %s" % (self.dish_type, self.name, str(sorted(self.ingredients)), self.price)
+            if isinstance(self.base_price, float):
+                return "{:.2f}€".format(self.base_price)
+            else:
+                return "{}".format(self.base_price)
 
-    def __eq__(self, other):
+    def __eq__(self, other: Any):
         if isinstance(other, self.__class__):
-            return (self.name == other.name
-                    and self.price == other.price
-                    and self.ingredients == other.ingredients
-                    and self.dish_type == other.dish_type)
+            return (self.base_price == other.base_price
+                    and self.price_per_unit == other.price_per_unit
+                    and self.unit == other.unit)
         return False
 
     def to_json_obj(self):
-        return {"name": self.name,
-                "price": self.price,
-                "ingredients": sorted(self.ingredients),
-                "dish_type": self.dish_type}
+        return {"base_price": self.base_price, "price_per_unit": self.price_per_unit, "unit": self.unit}
 
     def __hash__(self):
         # http://stackoverflow.com/questions/4005318/how-to-implement-a-good-hash-function-in-python
-        return (hash(self.name) << 1) ^ hash(self.price) ^ hash(frozenset(self.ingredients))
+        return (hash(self.base_price) << 1) ^ hash(self.price_per_unit) ^ hash(self.unit)
 
 
-class Menu:
-    def __init__(self, menu_date, dishes):
-        self.menu_date = menu_date
-        self.dishes = dishes
+class Prices:
+    students: Price
+    staff: Price
+    guests: Price
 
-    def __repr__(self):
-        menu_str = str(self.menu_date) + ": " + str(self.dishes)
-        return menu_str
+    def __init__(self, students: Optional[Price] = None, staff: Optional[Price] = None, guests: Optional[Price] = None):
+        if students is None:
+            self.students = Price("N/A")
+        else:
+            self.students = students
+        # fall back to the students price if there is only one price available
+        if staff is None:
+            self.staff = self.students
+        else:
+            self.staff = staff
+        if guests is None:
+            self.guests = self.students
+        else:
+            self.guests = guests
 
-    def __eq__(self, other):
+    def setBasePrice(self, base_price: float):
+        self.students.base_price = base_price
+        self.staff.base_price = base_price
+        self.guests.base_price = base_price
+
+    def __eq__(self, other: Any):
         if isinstance(other, self.__class__):
-            dishes_equal = set(self.dishes) == set(other.dishes)
-            date_equal = self.menu_date == other.menu_date
-            return dishes_equal and date_equal
+            return (self.students == other.students
+                    and self.staff == other.staff
+                    and self.guests == other.guests)
         return False
 
-    def remove_duplicates(self):
-        unique = []
-        seen = set()
-
-        for d in self.dishes:
-            if d not in seen:
-                unique.append(d)
-                seen.add(d)
-
-        self.dishes = unique
-
-
-class Week:
-    def __init__(self, calendar_week, year, days):
-        self.calendar_week = calendar_week
-        self.year = year
-        self.days = days
-
     def __repr__(self):
-        week_str = "Week %s-%s" % (self.year, self.calendar_week)
-        for day in self.days:
-            week_str += "\n %s" % day
-        return week_str
+        return "students: {}, staff: {}, guests: {}".format(self.students, self.staff, self.guests)
+        if self.price_per_unit and self.unit:
+            if isinstance(self.base_price, float):
+                return "{:.2f}€ + {:.2f} {}".format(self.base_price, self.price_per_unit, self.unit)
+            else:
+                return "{} + {} {}".format(self.base_price, self.price_per_unit, self.unit)
+        else:
+            if isinstance(self.base_price, float):
+                return "{:.2f}€".format(self.base_price)
+            else:
+                return "{}".format(self.base_price)
 
     def to_json_obj(self):
-        return {"number": self.calendar_week, "year": self.year,
-             "days": [{"date": str(menu.menu_date), "dishes": [dish.to_json_obj() for dish in menu.dishes]} for menu in
-                      self.days]}
-
-    def to_json(self):
-        week_json = json.dumps(
-            self.to_json_obj(),
-            ensure_ascii=False, indent=4)
-        return week_json
-
-    @staticmethod
-    def to_weeks(menus):
-        weeks = {}
-        for menu_key in menus:
-            menu = menus[menu_key]
-            menu_date = menu.menu_date
-            # get calendar week
-            calendar_week = menu_date.isocalendar()[1]
-            # get year of the calendar week. watch out that for instance jan 01 can still be in week 52 of the
-            # previous year
-            year_of_calendar_week = menu_date.year - 1 \
-                if calendar_week == 52 and menu_date.month == 1 else menu_date.year
-
-            # append menus to respective week
-            week = weeks.get(calendar_week, Week(calendar_week, year_of_calendar_week, []))
-            week.days.append(menu)
-            weeks[calendar_week] = week
-
-        return weeks
+        return {"students": self.students.to_json_obj(), "staff": self.staff.to_json_obj(), "guests": self.guests.to_json_obj()}
+    
+    def __hash__(self):
+        # http://stackoverflow.com/questions/4005318/how-to-implement-a-good-hash-function-in-python
+        return hash(self.students) ^ hash(self.staff) ^ hash(self.guests)
 
 
 class Ingredients:
+
+    location: str
+    ingredient_set: Set[str]
 
     ingredient_lookup = {
         "GQB" : "Certified Quality - Bavaria",
@@ -222,11 +213,11 @@ class Ingredients:
         "Z" : "Wt",
     }
 
-    def __init__(self, location: str) -> None:
+    def __init__(self, location: str):
         self.location = location
         self.ingredient_set = set()
 
-    def _values_lookup(self, values: Sequence[str], lookup: Optional[Dict[str, str]]) -> None:
+    def _values_lookup(self, values: Sequence[str], lookup: Optional[Dict[str, str]]):
         """
         Normalizes ingredients to the self.ingredient_lookup codes.
 
@@ -242,7 +233,7 @@ class Ingredients:
 
                 # sometimes the ‘,’ is missing between the ingredients (especially with IPP) and we try to split again
                 # with capital letters.
-                split_values = re.findall(r'[a-züöäA-ZÜÖÄ][^A-ZÜÖÄ]*', value)
+                split_values: List[Any] = re.findall(r'[a-züöäA-ZÜÖÄ][^A-ZÜÖÄ]*', value)
                 if split_values:
                     self._values_lookup(split_values, lookup)
                     continue
@@ -255,7 +246,7 @@ class Ingredients:
             else:
                 self.ingredient_set.add(value)
 
-    def parse_ingredients(self, values: str) -> None:
+    def parse_ingredients(self, values: str):
         """
         Parse and creates a normalized list of ingredients.
 
@@ -263,7 +254,7 @@ class Ingredients:
             values: String with comma separated ingredients codes.
         """
         values = values.strip()
-        split_values = values.split(',')
+        split_values: List[str] = values.split(',')
         # check for special parser/ingredient translation required
         if self.location == "fmi-bistro":
             self._values_lookup(split_values, self.fmi_ingredient_lookup)
@@ -277,3 +268,114 @@ class Ingredients:
 
     def __hash__(self):
         return hash(frozenset(self.ingredient_set))
+
+
+class Dish:
+    name: str
+    prices: Prices
+    ingredients: Ingredients
+    dish_type: str
+
+    def __init__(self, name: str, prices: Prices, ingredients: Ingredients, dish_type: str):
+        self.name = name
+        self.prices = prices
+        self.ingredients = ingredients
+        self.dish_type = dish_type
+
+    def __repr__(self):
+        return "%s %s: %s" % (self.name, str(sorted(self.ingredients)), self.price)
+
+    def __eq__(self, other: Any):
+        if isinstance(other, self.__class__):
+            return (self.name == other.name
+                    and self.prices == other.prices
+                    and self.ingredients == other.ingredients
+                    and self.dish_type == other.dish_type)
+        return False
+
+    def to_json_obj(self):
+        return {"name": self.name, "prices": self.prices.to_json_obj(),
+             "ingredients": sorted(self.ingredients), "dish_type": self.dish_type}
+
+    def __hash__(self):
+        # http://stackoverflow.com/questions/4005318/how-to-implement-a-good-hash-function-in-python
+        return (hash(self.name) << 1) ^ hash(self.prices) ^ hash(frozenset(self.ingredients)) ^ hash(self.dish_type)
+
+
+class Menu:
+    menu_date: datetime
+    dishes: List[Dish]
+
+    def __init__(self, menu_date: datetime, dishes: List[Dish]):
+        self.menu_date = menu_date
+        self.dishes = dishes
+
+    def __repr__(self):
+        menu_str = str(self.menu_date) + ": " + str(self.dishes)
+        return menu_str
+
+    def __eq__(self, other: Any):
+        if isinstance(other, self.__class__):
+            dishes_equal = set(self.dishes) == set(other.dishes)
+            date_equal = self.menu_date == other.menu_date
+            return dishes_equal and date_equal
+        return False
+
+    def remove_duplicates(self):
+        unique: List[Dish] = list()
+        seen: Set[Dish] = set()
+
+        for d in self.dishes:
+            if d not in seen:
+                unique.append(d)
+                seen.add(d)
+
+        self.dishes = unique
+
+
+class Week:
+
+    calendar_week: int
+    year: int
+    days: int
+
+    def __init__(self, calendar_week: int, year: int, days: int):
+        self.calendar_week = calendar_week
+        self.year = year
+        self.days = days
+
+    def __repr__(self):
+        week_str = "Week %s-%s" % (self.year, self.calendar_week)
+        for day in self.days:
+            week_str += "\n %s" % day
+        return week_str
+
+    def to_json_obj(self):
+        return {"number": self.calendar_week, "year": self.year,
+             "days": [{"date": str(menu.menu_date), "dishes": [dish.to_json_obj() for dish in menu.dishes]} for menu in
+                      self.days]}
+
+    def to_json(self):
+        week_json: str = json.dumps(
+            self.to_json_obj(),
+            ensure_ascii=False, indent=4)
+        return week_json
+
+    @staticmethod
+    def to_weeks(menus):
+        weeks: Dict[int, Week] = {}
+        for menu_key in menus:
+            menu: Menu = menus[menu_key]
+            menu_date = menu.menu_date
+            # get calendar week
+            calendar_week = menu_date.isocalendar()[1]
+            # get year of the calendar week. watch out that for instance jan 01 can still be in week 52 of the
+            # previous year
+            year_of_calendar_week = menu_date.year - 1 \
+                if calendar_week == 52 and menu_date.month == 1 else menu_date.year
+
+            # append menus to respective week
+            week: Week = weeks.get(calendar_week, Week(calendar_week, year_of_calendar_week, []))
+            week.days.append(menu)
+            weeks[calendar_week] = week
+        return weeks

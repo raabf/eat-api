@@ -110,6 +110,31 @@ The actual API is provided by static JSON files, which can be found in the gh-pa
 https://tum-dev.github.io/eat-api/<location>/<year>/<week-number>.json
 ```
 
+To get all menus for one specific location:
+```
+https://tum-dev.github.io/eat-api/<location>/combined/combined.json
+```
+
+To get all menus for all locations:
+```
+https://tum-dev.github.io/eat-api/all.json
+```
+
+To get all menus that are not older than one day for all locations:  
+Here `dish_type` is also normalized.
+All tailing digits and spaces get removed from `dish_type`.
+For example `Tagesgericht 1` -> `Tagesgericht` and `Aktionsessen 6` -> `Aktionsessen`.
+Also ignores all menus older than one day.
+This results in this file being usually half the size of the `all.json` file.
+```
+https://tum-dev.github.io/eat-api/all_ref.json
+```
+
+To get all available canteens and their location:
+```
+https://tum-dev.github.io/eat-api/canteens.json
+```
+
 #### Example
 The following link would give you the menu of Mensa Garching for week 20 in 2019:
 ```
@@ -121,20 +146,8 @@ The JSON files are produced by the tool shown in this repository. Hence, it is e
 
 ```
 $ python src/main.py -h
-usage: main.py [-h] [-d DATE] [-j PATH] [-c] [--openmensa PATH]
-               {fmi-bistro,ipp-bistro,mensa-garching,stucafe-karlstr,mensa-pasing,mensa-arcisstr,
-               stucafe-boltzmannstr,stubistro-arcisstr,stucafe-garching,mensa-martinsried,
-               mensa-weihenstephan,stubistro-grosshadern,stucafe-akademie-weihenstephan,mensa-lothstr,
-               stubistro-goethestr,stubistro-großhadern,mensa-arcisstrasse,stucafe-pasing,
-               stubistro-rosenheim,stucafe-adalbertstr,stubistro-schellingstr,mensa-leopoldstr}
-
-positional arguments:
-  {fmi-bistro,ipp-bistro,mensa-garching,stucafe-karlstr,mensa-pasing,mensa-arcisstr,
-  stucafe-boltzmannstr,stubistro-arcisstr,stucafe-garching,mensa-martinsried,
-  mensa-weihenstephan,stubistro-grosshadern,stucafe-akademie-weihenstephan,mensa-lothstr,
-  stubistro-goethestr,stubistro-großhadern,mensa-arcisstrasse,stucafe-pasing,
-  stubistro-rosenheim,stucafe-adalbertstr,stubistro-schellingstr,mensa-leopoldstr}
-                        the location you want to eat at
+main.py [-h] [-p LOCATION] [-d DATE] [-j PATH] [-c] [--openmensa PATH]
+        [-l]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -147,6 +160,7 @@ optional arguments:
                         for the location specified
   --openmensa PATH      directory for OpenMensa XML output (date parameter
                         will be ignored if this argument is used)
+  -l, --locations       prints all available locations formated as JSON
 ```
 
 It is mandatory to specify the canteen (e.g. mensa-garching). Furthermore, you can specify a date, for which you would like to get the menu. If no date is provided, all the dishes for the current week will be printed to the command line. the `--jsonify` option is used for the API and produces some JSON files containing the menu data.
